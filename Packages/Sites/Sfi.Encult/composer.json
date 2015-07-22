@@ -1,0 +1,17 @@
+{
+    "name": "sfi/encult",
+    "type": "typo3-flow-site",
+    "description": "Add description here",
+    "require": {
+        "typo3/neos": "*",
+        "typo3/neos-nodetypes": "*"
+    },
+    "suggest": {
+        "typo3/neos-seo": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Sfi\\Encult": "Classes"
+        }
+    }
+}
