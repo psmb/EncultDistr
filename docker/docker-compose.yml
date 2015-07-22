@@ -1,0 +1,56 @@
+dbdata:
+  image: busybox:latest
+  command: echo dbdata
+  volumes:
+    - /var/lib/mysql
+
+redis:
+  image: redis
+  restart: always
+
+db:
+  image: million12/mariadb:latest
+  ports:
+    - 3306
+  volumes_from:
+    - dbdata
+  environment:
+    MARIADB_PASS: pass
+  restart: always
+
+webdata:
+  image: busybox:latest
+  command: echo webdata
+  volumes:
+    - data:/data
+    - Persistent:/data/www/enculturation.dev/surf/shared/Data/Persistent
+    - /etc/localtime:/etc/localtime:ro
+
+web:
+  image: sfi/encultdistr:latest
+  ports:
+    - '80'
+  links:
+    - db:db
+    - redis
+  volumes_from:
+    - webdata
+  environment:
+    VIRTUAL_HOST: 'enculturation.dev,dev.enculturation.dev,next.enculturation.dev'
+    T3APP_NAME: 'enculturation.dev'
+  restart: always
+
+ssh:
+  image: million12/php-app-ssh
+  ports:
+    - '22'
+  links:
+    - db:db
+    - redis
+    - web:web
+  volumes_from:
+    - webdata
+  environment:
+    IMPORT_GITHUB_PUB_KEYS: dimaip
+  restart: always
+
