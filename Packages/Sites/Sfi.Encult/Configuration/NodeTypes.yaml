@@ -1,8 +1,116 @@
-# If you need more than just the "main" content area you can uncomment the snippet below. It will add a "sidebar" area
-# to your pages. You can add as many areas as you like, still only those that are rendered in your TypoScript and
-# Template are visible on your page.
----
-#'TYPO3.Neos.NodeTypes:Page':
-#  childNodes:
-#    'sidebar':
-#      type: 'TYPO3.Neos:ContentCollection'
+'Sfi.Encult:AbstractPage':
+  abstract: true
+  ui:
+    label: 'Abstract Page'
+  superTypes:
+    - 'TYPO3.Neos:Document'
+'Sfi.Encult:Page':
+  ui:
+    label: 'XXXX'
+  superTypes:
+    - 'Sfi.Encult:AbstractPage'
+'Sfi.Encult:PageSection':
+  ui:
+    label: 'Страница: Раздел'
+  superTypes:
+    - 'Sfi.Encult:AbstractPage'
+  childNodes:
+    main:
+      type: 'TYPO3.Neos:ContentCollection'
+'Sfi.Encult:PageMain':
+  ui:
+    label: 'Страница: Главная'
+  superTypes:
+    - 'Sfi.Encult:AbstractPage'
+
+
+
+
+
+
+
+'Sfi.Encult:Worldview':
+  superTypes:
+    - 'TYPO3.Neos:Document'
+  ui:
+    label: 'Мировоззрение'
+    icon: icon-file-text
+  childNodes:
+    main:
+      type: 'TYPO3.Neos:ContentCollection'
+  properties:
+    title:
+      type: string
+      ui:
+        inlineEditable: true
+        aloha:
+          placeholder: 'Название мировоззрения'
+
+'Sfi.Encult:Question':
+  superTypes:
+    - 'TYPO3.Neos:Document'
+  ui:
+    label: 'Вопрос'
+    icon: icon-file-text
+  properties:
+    title:
+      type: string
+      ui:
+        inlineEditable: true
+        aloha:
+          placeholder: 'Заголовок вопроса'
+    subTitle:
+      type: string
+      ui:
+        inlineEditable: true
+        aloha:
+          placeholder: 'Подзаголовок воспроса'
+
+'Sfi.Encult:Answer':
+  superTypes:
+    - 'TYPO3.Neos:Document'
+  ui:
+    label: 'Ответ'
+    icon: icon-file-text
+    inspector:
+      groups:
+        general:
+          label: 'Ответ'
+  childNodes:
+    transcription:
+      type: 'TYPO3.Neos:ContentCollection'
+  properties:
+    worldview:
+      type: reference
+      ui:
+        label: 'Мировоззрение'
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'general'
+          position: '10'
+          editorOptions:
+            nodeTypes: ['Sfi.Encult:Worldview']
+    authorName:
+      type: string
+      ui:
+        inlineEditable: true
+        aloha:
+          placeholder: 'Имя автора'
+    authorTitle:
+      type: string
+      ui:
+        inlineEditable: true
+        aloha:
+          placeholder: 'Титул автора'
+    encodedVideo:
+      type: string
+      ui:
+        label: 'Ссылка в YouTube на закодированное видео'
+        inspector:
+          group: 'general'
+    decodedVideo:
+      type: string
+      ui:
+        label: 'Ссылка в YouTube на раскодированное видео'
+        inspector:
+          group: 'general'

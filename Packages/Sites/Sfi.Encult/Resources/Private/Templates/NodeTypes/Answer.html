@@ -1,0 +1,10 @@
+{namespace neos=TYPO3\Neos\ViewHelpers}
+{namespace ts=TYPO3\TypoScript\ViewHelpers}
+<div class="row">
+	<div class="columns">
+		<p>{neos:contentElement.editable(property: 'authorName', tag: 'span')}</p>
+		<p><em>{neos:contentElement.editable(property: 'authorTitle', tag: 'span')}</em></p>
+		<div>{encodedVideo -> f:format.raw()}</div>
+		<div>{transcription -> f:format.raw()}</div>
+	</div>
+</div>

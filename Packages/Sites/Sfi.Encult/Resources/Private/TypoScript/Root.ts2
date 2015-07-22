@@ -1,37 +1,98 @@
 /**
  * Root TypoScript template for the Enculturation site
  */
-page = Page {
+page = 'You shouldn't see this'
+
+#This is a default page object. It's being extended and never used directly.
+prototype(Sfi.Encult:Page) >
+prototype(Sfi.Encult:Page) < prototype(TYPO3.Neos:Page) {
 	head {
+		titleTag.content = ${String.stripTags(q(node).property('title')) + ' | enculturation.ru'}
+
 		stylesheets.site = TYPO3.TypoScript:Template {
-			templatePath = 'resource://Sfi.Encult/Private/Templates/Page/Default.html'
+			templatePath = 'resource://Sfi.Encult/Private/Templates/SharedResources.html'
 			sectionName = 'stylesheets'
 		}
-
-		javascripts.site = TYPO3.TypoScript:Template {
-			templatePath = 'resource://Sfi.Encult/Private/Templates/Page/Default.html'
-			sectionName = 'headScripts'
-		}
 	}
-
+	htmlTag.attributes.lang="ru"
+	bodyTag.attributes.class = 'Page'
+	bodyTag.attributes.id = ${'page-' + q(node).property('_name')}
 	body {
-		templatePath = 'resource://Sfi.Encult/Private/Templates/Page/Default.html'
-		sectionName = 'body'
-		parts {
-			menu = Menu
-			breadcrumb = Breadcrumb
+		templatePath = 'resource://Sfi.Encult/Private/Templates/Pages/Page.html'
+		partialRootPath = 'resource://Sfi.Encult/Private/Partials'
+		layoutRootPath = 'resource://Sfi.Encult/Private/Layouts'
+
+		mainMenu = Menu {
+			entryLevel = 1
+			maximumLevels = 2
 		}
-		// These are your content areas, you can define as many as you want, just name them and the nodePath.
-		content {
-			// The default content section
-			main = PrimaryContent {
-				nodePath = 'main'
+
+		main = PrimaryContent {
+			renderByType {
+				condition = TRUE
+				type = ${q(documentNode).property('_nodeType.name')}
 			}
 		}
 
-		javascripts.site = TYPO3.TypoScript:Template {
-			templatePath = 'resource://Sfi.Encult/Private/Templates/Page/Default.html'
+		javascripts.bodyScripts = TYPO3.TypoScript:Template {
+			templatePath = 'resource://Sfi.Encult/Private/Templates/SharedResources.html'
 			sectionName = 'bodyScripts'
+		}
+		javascripts.analytics = TYPO3.TypoScript:Template {
+			templatePath = 'resource://Sfi.Encult/Private/Templates/SharedResources.html'
+			partialRootPath = 'resource://Sfi.Encult/Private/Partials'
+			sectionName = 'analytics'
+		}
+	}
+}
+
+
+root.fallbackPage {
+	@position = 'before default'
+	condition = TRUE
+	type = 'Sfi.Encult:Page'
+}
+# Disable stupid layout mechanism
+root.layout>
+
+prototype(Sfi.Encult:PageMain) {
+	questions = TYPO3.TypoScript:Collection {
+		collection = ${q(node).children('node-55afb779f1131').children('[instanceof Sfi.Encult:Question]').get()}
+		itemRenderer = TYPO3.Neos:ContentCase
+		itemName = 'node'
+		iterationName = 'iterator'
+	}
+}
+
+prototype(Sfi.Encult:Worldview) {
+	@process.contentElementWrapping = TYPO3.Neos:ContentElementWrapping
+	main = ContentCollection {
+		nodePath = 'main'
+	}
+}
+prototype(Sfi.Encult:Question) {
+	@process.contentElementWrapping = TYPO3.Neos:ContentElementWrapping
+	answers = TYPO3.TypoScript:Collection {
+		collection = ${q(node).children('[instanceof Sfi.Encult:Answer]').get()}
+		itemRenderer = TYPO3.Neos:ContentCase
+		itemName = 'node'
+		iterationName = 'iterator'
+	}
+}
+prototype(Sfi.Encult:Answer) {
+	@process.contentElementWrapping = TYPO3.Neos:ContentElementWrapping
+	transcription = ContentCollection {
+		nodePath = 'transcription'
+	}
+	encodedVideo = TYPO3.TypoScript:Tag {
+		tagName = "iframe"
+		attributes{
+			width = 853
+			height = 480
+			frameborder = "0"
+			# Extract video id from normal playback url
+			src = ${String.pregMatch(q(node).property('encodedVideo'),'#\?v=([a-z0-9-]+)#i') ? '//www.youtube.com/embed/' + Array.First(Array.Slice(String.pregMatch(q(node).property('encodedVideo'),'#\?v=([a-z0-9-_]+)#i'),1)) + '?rel=0&amp;showinfo=0' : ''} 
+			allowfullscreen = true
 		}
 	}
 }
