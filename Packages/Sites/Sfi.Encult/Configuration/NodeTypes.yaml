@@ -114,3 +114,6 @@
         label: 'Ссылка в YouTube на раскодированное видео'
         inspector:
           group: 'general'
+    votesCount:
+      type: integer
+

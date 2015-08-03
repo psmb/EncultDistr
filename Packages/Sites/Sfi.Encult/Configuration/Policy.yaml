@@ -1,0 +1,18 @@
+#                                                                        #
+# Security policy for the TYPO3.Neos package                             #
+#                                                                        #
+
+privilegeTargets:
+
+  'TYPO3\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
+
+    'Sfi.Encult:VoteActions':
+      matcher: 'within(Sfi\Encult\Controller\VoteController) && method(public .*->(?!initialize).*Action())'
+
+roles:
+
+  'TYPO3.Flow:Everybody':
+    privileges:
+      -
+        privilegeTarget: 'Sfi.Encult:VoteActions'
+        permission: GRANT

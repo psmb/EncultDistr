@@ -81,6 +81,7 @@ prototype(Sfi.Encult:Question) {
 }
 prototype(Sfi.Encult:Answer) {
 	@process.contentElementWrapping = TYPO3.Neos:ContentElementWrapping
+	question = ${q(node).parent().get(0)}
 	transcription = ContentCollection {
 		nodePath = 'transcription'
 	}

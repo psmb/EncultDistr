@@ -2,39 +2,325 @@
 <root>
  <site name="Enculturation" state="1" siteResourcesPackageKey="Sfi.Encult" siteNodeName="encult">
   <nodes formatVersion="2.0">
-   <node nodeName="encult">
-    <variant workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" sortingIndex="100" version="1" removed="" hidden="" hiddenInIndex="">
+   <node identifier="55bcf171-1a5e-8ac4-da4d-9cd2f5dfd304" nodeName="encult">
+    <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="2" removed="" hidden="" hiddenInIndex="">
      <dimensions>
-     
       <language>en_US</language>
-     
      </dimensions>
      <accessRoles __type="array"/>
+     <creationDateTime __type="object" __classname="DateTime">2015-07-22T10:55:00+00:00</creationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T16:01:26+00:00</lastModificationDateTime>
      <properties>
       <title __type="string">Home</title>
       <uriPathSegment __type="string">home</uriPathSegment>
+      <canonicalLink __type="string"></canonicalLink>
      </properties>
     </variant>
-    <node nodeName="main">
-     <variant workspace="live" nodeType="TYPO3.Neos:ContentCollection" sortingIndex="100" version="1" removed="" hidden="" hiddenInIndex="">
-      <dimensions>
-      
-       <language>en_US</language>
-      
-      </dimensions>
+    <variant sortingIndex="100" workspace="live" nodeType="Sfi.Encult:PageMain" version="2" removed="" hidden="" hiddenInIndex="">
+     <dimensions/>
+     <accessRoles __type="array"/>
+     <creationDateTime __type="object" __classname="DateTime">2015-07-22T17:25:34+00:00</creationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T17:25:43+00:00</lastModificationDateTime>
+     <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-22T17:25:43+00:00</lastPublicationDateTime>
+     <properties>
+      <title __type="string">Home</title>
+      <uriPathSegment __type="string">home</uriPathSegment>
+      <canonicalLink __type="string"></canonicalLink>
+      <titleOverride __type="string"></titleOverride>
+      <metaDescription __type="string"></metaDescription>
+      <metaKeywords __type="string"></metaKeywords>
+      <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+      <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+      <twitterCardType __type="string"></twitterCardType>
+      <twitterCardCreator __type="string"></twitterCardCreator>
+      <twitterCardTitle __type="string"></twitterCardTitle>
+      <twitterCardDescription __type="string"></twitterCardDescription>
+      <twitterCardImage __type="string"></twitterCardImage>
+      <openGraphType __type="string"></openGraphType>
+      <openGraphTitle __type="string"></openGraphTitle>
+      <openGraphDescription __type="string"></openGraphDescription>
+      <openGraphImage __type="string"></openGraphImage>
+      <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+      <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+     </properties>
+    </variant>
+    <node identifier="923d671e-c302-17ed-69ee-4d0da951c914" nodeName="node-55afb779f1131">
+     <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos:Shortcut" version="3" removed="" hidden="" hiddenInIndex="1">
+      <dimensions/>
       <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-07-22T15:32:09+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T15:49:36+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-22T15:49:36+00:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">voprosy</uriPathSegment>
+       <targetMode __type="string">firstChildNode</targetMode>
+       <title __type="string">Вопросы</title>
+       <target __type="string"></target>
+      </properties>
      </variant>
-     <node nodeName="text1">
-      <variant workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" sortingIndex="100" version="1" removed="" hidden="" hiddenInIndex="">
-       <dimensions>
-       
-        <language>en_US</language>
-       
-       </dimensions>
+     <node identifier="0e1f08b5-56d4-90ae-2bb3-5d309f317836" nodeName="node-55afb7b90e472">
+      <variant sortingIndex="100" workspace="live" nodeType="Sfi.Encult:Question" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
        <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-07-22T15:33:13+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T15:40:47+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-22T15:40:47+00:00</lastPublicationDateTime>
        <properties>
-        <text __type="string">&lt;p&gt;This is the homepage&lt;/p&gt;</text>
+        <uriPathSegment __type="string">proshat-li-vraga</uriPathSegment>
+        <canonicalLink __type="string"></canonicalLink>
+        <title __type="string">Прощать ли врага?</title>
        </properties>
+      </variant>
+      <node identifier="6defd444-afd6-9280-cd15-c066f4a228e7" nodeName="node-55afba0fa89ef">
+       <variant sortingIndex="100" workspace="live" nodeType="Sfi.Encult:Answer" version="18" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-07-22T15:43:11+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-08-03T17:30:40+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-08-03T11:28:11+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">da-konechno</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Да, конечно</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <worldview __type="string">02e71cc6-5a18-6c33-015a-a4dfbb9184ec</worldview>
+         <authorName __type="string">Христианин Вася</authorName>
+         <authorTitle __type="string">Профессор кислых щей</authorTitle>
+         <encodedVideo __type="string">http://www.youtube.com/watch?v=a20xYpQG6uc</encodedVideo>
+         <decodedVideo __type="string">http://www.youtube.com/watch?v=jEWs5bbITIM</decodedVideo>
+        </properties>
+       </variant>
+       <node identifier="215730e7-2135-864d-8771-c3cca26abbab" nodeName="transcription">
+        <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+         <dimensions/>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2015-07-22T15:43:11+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T15:47:33+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-22T15:47:32+00:00</lastPublicationDateTime>
+         <properties/>
+        </variant>
+       </node>
+      </node>
+      <node identifier="947caabe-bc33-bcaa-c251-3750bdca0001" nodeName="node-55bf4f6f3af3f">
+       <variant sortingIndex="150" workspace="live" nodeType="Sfi.Encult:Answer" version="5" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-08-03T11:24:31+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-08-03T11:28:11+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-08-03T11:28:11+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">net-ne-stoit</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Нет, не стоит</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Буддист Петя</authorName>
+         <authorTitle __type="string">Монах-отшельник</authorTitle>
+         <encodedVideo __type="string">http://www.youtube.com/watch?v=ZUOLu4Gf8zs</encodedVideo>
+         <decodedVideo __type="string">http://www.youtube.com/watch?v=ZUOLu4Gf8zs</decodedVideo>
+        </properties>
+       </variant>
+       <node identifier="a7a51386-1b6b-89ea-5754-7954ad4926f4" nodeName="transcription">
+        <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+         <dimensions/>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2015-08-03T11:24:31+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2015-08-03T11:27:03+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2015-08-03T11:27:02+00:00</lastPublicationDateTime>
+         <properties/>
+        </variant>
+       </node>
+      </node>
+     </node>
+    </node>
+    <node identifier="f7100f4c-b21b-be83-d9f6-0cd0f9b5c7d4" nodeName="node-55afb944356ae">
+     <variant sortingIndex="175" workspace="live" nodeType="TYPO3.Neos:Shortcut" version="4" removed="" hidden="" hiddenInIndex="1">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-07-22T15:39:58+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T15:49:36+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-22T15:49:36+00:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">mirovozzreniya</uriPathSegment>
+       <targetMode __type="string">firstChildNode</targetMode>
+       <title __type="string">Мировоззрения</title>
+       <target __type="string"></target>
+      </properties>
+     </variant>
+     <node identifier="02e71cc6-5a18-6c33-015a-a4dfbb9184ec" nodeName="node-55afb966ba691">
+      <variant sortingIndex="100" workspace="live" nodeType="Sfi.Encult:Worldview" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-07-22T15:40:22+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T16:51:33+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-22T16:51:33+00:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">hristianstvo</uriPathSegment>
+        <canonicalLink __type="string"></canonicalLink>
+        <title __type="string">Христианство</title>
+        <titleOverride __type="string"></titleOverride>
+        <metaDescription __type="string"></metaDescription>
+        <metaKeywords __type="string"></metaKeywords>
+        <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+        <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+        <twitterCardType __type="string"></twitterCardType>
+        <twitterCardCreator __type="string"></twitterCardCreator>
+        <twitterCardTitle __type="string"></twitterCardTitle>
+        <twitterCardDescription __type="string"></twitterCardDescription>
+        <twitterCardImage __type="string"></twitterCardImage>
+        <openGraphType __type="string"></openGraphType>
+        <openGraphTitle __type="string"></openGraphTitle>
+        <openGraphDescription __type="string"></openGraphDescription>
+        <openGraphImage __type="string"></openGraphImage>
+        <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+        <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+       </properties>
+      </variant>
+      <node identifier="44653cab-2680-824c-96b8-80c5b8297a2e" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="1" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-07-22T16:01:26+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T16:01:26+00:00</lastModificationDateTime>
+        <properties/>
+       </variant>
+       <node identifier="b5c334a4-0ae2-0abb-4069-a3a49268a450" nodeName="node-55b0cbed28004">
+        <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
+         <dimensions/>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2015-07-23T11:11:41+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2015-08-03T11:24:12+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2015-08-03T11:24:12+00:00</lastPublicationDateTime>
+         <properties>
+          <text __type="string">&lt;p&gt;jjjjj&lt;/p&gt;</text>
+         </properties>
+        </variant>
+       </node>
+      </node>
+     </node>
+     <node identifier="55c38588-514f-cdda-5832-b1dd3ea57aae" nodeName="node-55bf4f4c6ebff">
+      <variant sortingIndex="150" workspace="live" nodeType="Sfi.Encult:Worldview" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-08-03T11:23:56+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-08-03T11:24:07+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-08-03T11:24:07+00:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">buddizm</uriPathSegment>
+        <canonicalLink __type="string"></canonicalLink>
+        <title __type="string">Буддизм</title>
+       </properties>
+      </variant>
+      <node identifier="2ddf1f11-2b46-bcf7-39c8-49bbba9f3557" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-08-03T11:23:56+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-08-03T11:24:07+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-08-03T11:24:07+00:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+      </node>
+     </node>
+    </node>
+    <node identifier="39885d83-baaa-3dda-8b3a-7ecada2ac577" nodeName="node-55afbbb6f2280">
+     <variant sortingIndex="250" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="3" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-07-22T15:50:15+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T15:59:33+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-22T15:59:33+00:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">o-proekte</uriPathSegment>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">О проекте</title>
+      </properties>
+     </variant>
+     <node identifier="00d12bfd-9064-9129-3795-063c21f6615b" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-07-22T15:50:15+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T15:59:33+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-22T15:59:33+00:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="8137ebf2-768d-d4c4-413b-46e82cf5cb66" nodeName="node-55afbbc662fc8">
+     <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="3" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-07-22T15:50:30+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T15:59:33+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-22T15:59:33+00:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">statistika</uriPathSegment>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Статистика</title>
+      </properties>
+     </variant>
+     <node identifier="e25cf864-7bcb-d7c7-b2f7-4110d5070ca3" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-07-22T15:50:30+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T15:59:33+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-22T15:59:33+00:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
+    </node>
+    <node identifier="493acc5d-a478-7dec-71d1-60da1b9c230a" nodeName="node-55afbbd405f7e">
+     <variant sortingIndex="350" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="3" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-07-22T15:50:44+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T15:59:33+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-22T15:59:33+00:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">analitika</uriPathSegment>
+       <canonicalLink __type="string"></canonicalLink>
+       <title __type="string">Аналитика</title>
+      </properties>
+     </variant>
+     <node identifier="086601c2-376f-32a3-53c7-32f73b984a9e" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-07-22T15:50:44+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T15:59:33+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-22T15:59:33+00:00</lastPublicationDateTime>
+       <properties/>
       </variant>
      </node>
     </node>
