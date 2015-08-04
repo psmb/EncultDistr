@@ -45,7 +45,7 @@ class VoteController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 
 		$voteCookieId = 'vote_in_' . $vote->getQuestionIdentifier();
 		if ($httpRequest->hasCookie($voteCookieId)) {
-			return "You have already voted for this question!";
+			throw new \Exception('You have already voted for this question!', 1427315962);
 		}
 		// Set Answer id as a value of a cookie, to be used in frontend
 		$voteCookie = new Cookie($voteCookieId, $vote->getAnswerIdentifier(), 0, 72000);
@@ -58,20 +58,18 @@ class VoteController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 			$returningCookie = new Cookie('returning', $now->format('U'));
 			$response->setCookie($returningCookie);
 		}
-
-
 		$vote->setDateTime($now);
 		$vote->setIsReturning($isReturning);
 		$vote->setIpAddress($ipAddress);
 
+		// Update vote count on the answer node
 		$livecontext = $this->contextFactory->create(array('workspaceName' => 'live'));
-
 		$answerNode = $livecontext->getNodeByIdentifier($vote->getAnswerIdentifier());
 		$voteCount = $answerNode->getProperty('voteCount');
 		$voteCount = $voteCount ? $voteCount + 1 : 1;
-
 		$answerNode->setProperty('voteCount', $voteCount);
 
+		// Save the vote (for statistics and logging)
 		$this->voteRepository->add($vote);
 
 		return "Success";

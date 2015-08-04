@@ -27,6 +27,12 @@ class Vote {
 	protected $questionIdentifier;
 
 	/**
+	 * @var string
+	 * @Flow\Validate(type="NotEmpty")
+	 */
+	protected $worldviewIdentifier;
+
+	/**
 	 * @var \DateTime
 	 */
 	protected $dateTime;
@@ -89,6 +95,28 @@ class Vote {
     public function setQuestionIdentifier($questionIdentifier)
     {
         $this->questionIdentifier = $questionIdentifier;
+    }
+
+    /**
+     * Gets the value of worldviewIdentifier.
+     *
+     * @return string
+     */
+    public function getWorldviewIdentifier()
+    {
+        return $this->worldviewIdentifier;
+    }
+
+    /**
+     * Sets the value of worldviewIdentifier.
+     *
+     * @param string $worldviewIdentifier the worldview identifier
+     *
+     * @return void
+     */
+    public function setWorldviewIdentifier($worldviewIdentifier)
+    {
+        $this->worldviewIdentifier = $worldviewIdentifier;
     }
 
     /**
