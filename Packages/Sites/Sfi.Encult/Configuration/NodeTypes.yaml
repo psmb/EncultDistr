@@ -27,6 +27,15 @@
 
 
 
+'Sfi.Encult:StatsPlugin':
+  superTypes:
+    'TYPO3.Neos:Plugin': TRUE
+  ui:
+    label: 'Статистика голосования'
+    group: 'plugins'
+
+
+
 
 
 'Sfi.Encult:Worldview':

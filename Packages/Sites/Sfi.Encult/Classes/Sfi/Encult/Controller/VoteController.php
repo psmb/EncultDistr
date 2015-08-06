@@ -12,6 +12,10 @@ use Sfi\Encult\Domain\Repository\VoteRepository;
 use TYPO3\Flow\Http\Cookie;
 use TYPO3\TYPO3CR\Domain\Service\ContextFactoryInterface;
 
+/*
+ * Trivial voting system, based on cookies.
+ * Tracks returning voters and ip-address
+ */
 class VoteController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 
 	/**
@@ -21,20 +25,27 @@ class VoteController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 	protected $voteRepository;
 
 	/**
+	 * Doctrine's Entity Manager. Note that "ObjectManager" is the name of the related
+	 * interface ...
+	 *
 	 * @Flow\Inject
-	 * @var ContextFactoryInterface
+	 * @var \Doctrine\Common\Persistence\ObjectManager
 	 */
-	protected $contextFactory;
+	protected $entityManager;
+
+	protected $liveContext;
+
+	/**
+	 * @param ContextFactoryInterface
+	 */
+	public function __construct(ContextFactoryInterface $contextFactory) {
+		$this->liveContext = $contextFactory->create(array('workspaceName' => 'live'));
+	}
 
 	/**
 	 * @param Vote $vote
 	 *
 	 * @return void
-	 */
-
-	/*
-	 * Trivial voting system, based on cookies.
-	 * Tracks returning voters and ip-address
 	 */
 	public function castVoteAction(Vote $vote) {
 		$httpRequest = $this->controllerContext->getRequest()->getHttpRequest();
@@ -63,8 +74,7 @@ class VoteController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 		$vote->setIpAddress($ipAddress);
 
 		// Update vote count on the answer node
-		$livecontext = $this->contextFactory->create(array('workspaceName' => 'live'));
-		$answerNode = $livecontext->getNodeByIdentifier($vote->getAnswerIdentifier());
+		$answerNode = $this->liveContext->getNodeByIdentifier($vote->getAnswerIdentifier());
 		$voteCount = $answerNode->getProperty('voteCount');
 		$voteCount = $voteCount ? $voteCount + 1 : 1;
 		$answerNode->setProperty('voteCount', $voteCount);
@@ -73,5 +83,24 @@ class VoteController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 		$this->voteRepository->add($vote);
 
 		return "Success";
+	}
+
+	/*
+	 * Display voting stats
+	 */
+	public function displayStatsAction() {
+		$queryString = "SELECT worldviewIdentifier as worldview, count(*) AS count FROM sfi_encult_domain_model_vote GROUP BY worldviewIdentifier;";
+		$rsm = new \Doctrine\ORM\Query\ResultSetMapping();
+		$rsm->addScalarResult('worldview', 'worldview');
+		$rsm->addScalarResult('count', 'count');
+		$query = $this->entityManager->createNativeQuery($queryString, $rsm);
+		$voteResults = array();
+		foreach ($query->getResult() as $row) {
+			if ($row['worldview']) {
+				$worldviewNode = $this->liveContext->getNodeByIdentifier($row['worldview']);
+				$voteResults[$worldviewNode->getProperty('title')] = $row['count'];
+			}
+		}
+		$this->view->assign('voteResults', $voteResults);
 	}
 }

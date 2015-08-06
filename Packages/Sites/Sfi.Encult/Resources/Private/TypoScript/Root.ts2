@@ -64,6 +64,12 @@ prototype(Sfi.Encult:PageMain) {
 	}
 }
 
+prototype(Sfi.Encult:PageSection) {
+	main = TYPO3.Neos:PrimaryContent {
+		nodePath = 'main'
+	}
+}
+
 prototype(Sfi.Encult:Worldview) {
 	@process.contentElementWrapping = TYPO3.Neos:ContentElementWrapping
 	main = ContentCollection {
@@ -96,4 +102,17 @@ prototype(Sfi.Encult:Answer) {
 			allowfullscreen = true
 		}
 	}
+}
+
+
+
+
+
+
+
+prototype(Sfi.Encult:StatsPlugin) < prototype(TYPO3.Neos:Plugin)
+prototype(Sfi.Encult:StatsPlugin) {
+	package = 'Sfi.Encult'
+	controller = 'Vote'
+	action = 'displayStats'
 }

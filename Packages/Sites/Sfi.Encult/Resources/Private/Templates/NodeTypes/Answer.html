@@ -13,6 +13,7 @@
 		</f:form>
 		<p>{neos:contentElement.editable(property: 'authorName', tag: 'span')}</p>
 		<p><em>{neos:contentElement.editable(property: 'authorTitle', tag: 'span')}</em></p>
+		<div>Голоса: {node.properties.voteCount}</div>
 		<div>{encodedVideo -> f:format.raw()}</div>
 		<div>{transcription -> f:format.raw()}</div>
 	</div>

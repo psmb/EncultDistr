@@ -1,0 +1,7 @@
+<h2>Общая статистика</h2>
+<table>
+	<tr><th>Мировоззрение</th><th>Количество голосов</th></tr>
+	<f:for each="{voteResults}" as="count" key="worldview">
+		<tr><td>{worldview}</td><td>{count}</td></tr>
+	</f:for>
+</table>
