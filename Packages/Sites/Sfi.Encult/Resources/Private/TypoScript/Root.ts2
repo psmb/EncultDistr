@@ -77,7 +77,7 @@ prototype(Sfi.Encult:Worldview) {
 }
 
 prototype(Sfi.Encult:Question) < prototype(TYPO3.TypoScript:Value) {
-	@override.answerId = ${request.parentRequest.headers.cookies['vote_in_' + documentNode.identifier].value}
+	@override.answerId = ${request.mainRequest.parentRequest.headers.cookies['vote_in_' + documentNode.identifier].value}
 	value = TYPO3.TypoScript:Case {
 		questionPost {
 			condition = ${answerId}
@@ -92,7 +92,7 @@ prototype(Sfi.Encult:Question) < prototype(TYPO3.TypoScript:Value) {
 		mode = 'cached'
 		entryIdentifier {
 			node = ${node}
-			answerId = ${request.parentRequest.headers.cookies['vote_in_' + documentNode.identifier].value}
+			answerId = ${request.mainRequest.parentRequest.headers.cookies['vote_in_' + documentNode.identifier].value}
 		}
 		entryTags {
 			1 = ${'Node_' + documentNode.identifier}
@@ -100,8 +100,8 @@ prototype(Sfi.Encult:Question) < prototype(TYPO3.TypoScript:Value) {
 		}
 	}
 }
-root.@cache.entryIdentifier.answerId = ${request.parentRequest.headers.cookies['vote_in_' + documentNode.identifier].value}
-prototype(Sfi.Encult:Page).@cache.entryIdentifier.answerId = ${request.parentRequest.headers.cookies['vote_in_' + documentNode.identifier].value}
+root.@cache.entryIdentifier.answerId = ${request.mainRequest.parentRequest.headers.cookies['vote_in_' + documentNode.identifier].value}
+prototype(Sfi.Encult:Page).@cache.entryIdentifier.answerId = ${request.mainRequest.parentRequest.headers.cookies['vote_in_' + documentNode.identifier].value}
 
 prototype(Sfi.Encult:QuestionPre) < prototype(TYPO3.TypoScript:Template) {
 	node = ${node}
@@ -116,7 +116,7 @@ prototype(Sfi.Encult:QuestionPre) < prototype(TYPO3.TypoScript:Template) {
 prototype(Sfi.Encult:QuestionPost) < prototype(TYPO3.TypoScript:Template) {
 	node = ${node}
 	templatePath = 'resource://Sfi.Encult/Private/Templates/NodeTypes/QuestionPost.html'
-	@override.answerId = ${request.parentRequest.headers.cookies['vote_in_' + documentNode.identifier].value}
+	@override.answerId = ${request.mainRequest.parentRequest.headers.cookies['vote_in_' + documentNode.identifier].value}
 	answerId = ${answerId}
 	answer = Sfi.Encult:AnswerPost {
 		@override.node = ${q(site).find('#' + answerId).get(0)}
@@ -134,7 +134,7 @@ prototype(Sfi.Encult:QuestionPost) < prototype(TYPO3.TypoScript:Template) {
 prototype(Sfi.Encult:QuestionShort) < prototype(TYPO3.TypoScript:Template) {
 	node = ${node}
 	templatePath = 'resource://Sfi.Encult/Private/Templates/NodeTypes/QuestionShort.html'
-	answerId = ${request.parentRequest.headers.cookies['vote_in_' + documentNode.identifier].value}
+	answerId = ${request.mainRequest.parentRequest.headers.cookies['vote_in_' + documentNode.identifier].value}
 }
 
 prototype(Sfi.Encult:Answer) {
@@ -152,7 +152,7 @@ prototype(Sfi.Encult:AnswerPost) < prototype(TYPO3.TypoScript:Template) {
 	node = ${node}
 	templatePath = 'resource://Sfi.Encult/Private/Templates/NodeTypes/AnswerPost.html'
 	question = ${q(node).parent().get(0)}
-	answerId = ${request.parentRequest.headers.cookies['vote_in_' + documentNode.identifier].value}
+	answerId = ${request.mainRequest.parentRequest.headers.cookies['vote_in_' + documentNode.identifier].value}
 	encodedVideo = TYPO3.TypoScript:Tag {
 		tagName = "iframe"
 		attributes{
