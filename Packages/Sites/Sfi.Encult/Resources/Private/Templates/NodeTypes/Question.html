@@ -1,9 +1,24 @@
 {namespace neos=TYPO3\Neos\ViewHelpers}
 {namespace ts=TYPO3\TypoScript\ViewHelpers}
-<div class="row">
-	<div class="columns">
-		<h1>{neos:contentElement.editable(property: 'title', tag: 'span')}</h1>
-		<h3>{neos:contentElement.editable(property: 'subTitle', tag: 'span')}</h3>
-		<div>{answers -> f:format.raw()}</div>
-	</div>
-</div>
+<f:if condition="{answer}">
+    <f:then>
+ 		<div class="row">
+			<div class="columns">
+				<h1>{neos:contentElement.editable(property: 'title', tag: 'span')}</h1>
+				<h3>{neos:contentElement.editable(property: 'subTitle', tag: 'span')}</h3>
+
+				<div style="background: yellow">{answer -> f:format.raw()}</div>
+				<div>{answers -> f:format.raw()}</div>
+			</div>
+		</div>       
+    </f:then>
+    <f:else>
+		<div class="row">
+			<div class="columns">
+				<h1>{neos:contentElement.editable(property: 'title', tag: 'span')}</h1>
+				<h3>{neos:contentElement.editable(property: 'subTitle', tag: 'span')}</h3>
+				<div>{answers -> f:format.raw()}</div>
+			</div>
+		</div>
+    </f:else>
+</f:if>

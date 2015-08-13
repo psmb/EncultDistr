@@ -111,18 +111,30 @@
         inlineEditable: true
         aloha:
           placeholder: 'Титул автора'
-    encodedVideo:
-      type: string
+    quizAudio:
+      type: TYPO3\Media\Domain\Model\ImageInterface
       ui:
-        label: 'Ссылка в YouTube на закодированное видео'
+        label: 'Аудио (до голосования)'
         inspector:
           group: 'general'
-    decodedVideo:
+    quizText:
       type: string
       ui:
-        label: 'Ссылка в YouTube на раскодированное видео'
+        inlineEditable: true
+        aloha:
+          placeholder: 'Расшифровка аудио (до голосования)'
+    fullVideo:
+      type: string
+      ui:
+        label: 'Ссылка на видео (после голосования)'
         inspector:
           group: 'general'
+    fullText:
+      type: string
+      ui:
+        inlineEditable: true
+        aloha:
+          placeholder: 'Расшифровка видео (после голосования)'
     votesCount:
       type: integer
 

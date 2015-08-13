@@ -46,7 +46,6 @@ prototype(Sfi.Encult:Page) < prototype(TYPO3.Neos:Page) {
 	}
 }
 
-
 root.fallbackPage {
 	@position = 'before default'
 	condition = TRUE
@@ -58,7 +57,7 @@ root.layout>
 prototype(Sfi.Encult:PageMain) {
 	questions = TYPO3.TypoScript:Collection {
 		collection = ${q(node).children('node-55afb779f1131').children('[instanceof Sfi.Encult:Question]').get()}
-		itemRenderer = TYPO3.Neos:ContentCase
+		itemRenderer = Sfi.Encult:QuestionShort
 		itemName = 'node'
 		iterationName = 'iterator'
 	}
@@ -71,26 +70,89 @@ prototype(Sfi.Encult:PageSection) {
 }
 
 prototype(Sfi.Encult:Worldview) {
-	@process.contentElementWrapping = TYPO3.Neos:ContentElementWrapping
+	@process.contentElementWrapping = TYPO3.TypoScript:TemplateElementWrapping
 	main = ContentCollection {
 		nodePath = 'main'
 	}
 }
-prototype(Sfi.Encult:Question) {
-	@process.contentElementWrapping = TYPO3.Neos:ContentElementWrapping
+
+prototype(Sfi.Encult:Question) < prototype(TYPO3.TypoScript:Value) {
+	@override.answerId = ${request.parentRequest.headers.cookies['vote_in_' + documentNode.identifier].value}
+	value = TYPO3.TypoScript:Case {
+		questionPost {
+			condition = ${answerId}
+			type = 'Sfi.Encult:QuestionPost'
+		}
+		questionPre {
+			condition = ${true}
+			type = 'Sfi.Encult:QuestionPre'
+		}
+	}
+	@cache {
+		mode = 'cached'
+		entryIdentifier {
+			node = ${node}
+			answerId = ${request.parentRequest.headers.cookies['vote_in_' + documentNode.identifier].value}
+		}
+		entryTags {
+			1 = ${'Node_' + documentNode.identifier}
+			2 = ${'DescendantOf_' + documentNode.identifier}
+		}
+	}
+}
+root.@cache.entryIdentifier.answerId = ${request.parentRequest.headers.cookies['vote_in_' + documentNode.identifier].value}
+prototype(Sfi.Encult:Page).@cache.entryIdentifier.answerId = ${request.parentRequest.headers.cookies['vote_in_' + documentNode.identifier].value}
+
+prototype(Sfi.Encult:QuestionPre) < prototype(TYPO3.TypoScript:Template) {
+	node = ${node}
+	templatePath = 'resource://Sfi.Encult/Private/Templates/NodeTypes/QuestionPre.html'
 	answers = TYPO3.TypoScript:Collection {
 		collection = ${q(node).children('[instanceof Sfi.Encult:Answer]').get()}
-		itemRenderer = TYPO3.Neos:ContentCase
+		itemRenderer = Sfi.Encult:AnswerPre
 		itemName = 'node'
 		iterationName = 'iterator'
 	}
 }
-prototype(Sfi.Encult:Answer) {
-	@process.contentElementWrapping = TYPO3.Neos:ContentElementWrapping
-	question = ${q(node).parent().get(0)}
-	transcription = ContentCollection {
-		nodePath = 'transcription'
+prototype(Sfi.Encult:QuestionPost) < prototype(TYPO3.TypoScript:Template) {
+	node = ${node}
+	templatePath = 'resource://Sfi.Encult/Private/Templates/NodeTypes/QuestionPost.html'
+	@override.answerId = ${request.parentRequest.headers.cookies['vote_in_' + documentNode.identifier].value}
+	answerId = ${answerId}
+	answer = Sfi.Encult:AnswerPost {
+		@override.node = ${q(site).find('#' + answerId).get(0)}
 	}
+	answers = TYPO3.TypoScript:Collection {
+		collection = ${q(node).children('[instanceof Sfi.Encult:Answer]').get()}
+		itemRenderer = Sfi.Encult:AnswerPost
+		itemName = 'node'
+		iterationName = 'iterator'
+	}
+}
+
+
+
+prototype(Sfi.Encult:QuestionShort) < prototype(TYPO3.TypoScript:Template) {
+	node = ${node}
+	templatePath = 'resource://Sfi.Encult/Private/Templates/NodeTypes/QuestionShort.html'
+	answerId = ${request.parentRequest.headers.cookies['vote_in_' + documentNode.identifier].value}
+}
+
+prototype(Sfi.Encult:Answer) {
+	node = ${node}
+	@process.contentElementWrapping = TYPO3.TypoScript:TemplateElementWrapping
+	question = ${q(node).parent().get(0)}
+}
+
+prototype(Sfi.Encult:AnswerPre) < prototype(TYPO3.TypoScript:Template) {
+	node = ${node}
+	templatePath = 'resource://Sfi.Encult/Private/Templates/NodeTypes/AnswerPre.html'
+	question = ${q(node).parent().get(0)}
+}
+prototype(Sfi.Encult:AnswerPost) < prototype(TYPO3.TypoScript:Template) {
+	node = ${node}
+	templatePath = 'resource://Sfi.Encult/Private/Templates/NodeTypes/AnswerPost.html'
+	question = ${q(node).parent().get(0)}
+	answerId = ${request.parentRequest.headers.cookies['vote_in_' + documentNode.identifier].value}
 	encodedVideo = TYPO3.TypoScript:Tag {
 		tagName = "iframe"
 		attributes{
