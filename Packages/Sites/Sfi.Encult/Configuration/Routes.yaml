@@ -1,0 +1,12 @@
+-
+  name: 'Neos :: Frontend :: Json render'
+  uriPattern: '{node}.json'
+  defaults:
+    '@package': TYPO3.Neos
+    '@controller': Frontend\Node
+    '@action': show
+    '@format': json
+  routeParts:
+    node:
+      handler: TYPO3\Neos\Routing\FrontendNodeRoutePartHandlerInterface
+  appendExceedingArguments: true

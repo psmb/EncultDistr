@@ -85,9 +85,6 @@
       groups:
         general:
           label: 'Ответ'
-  childNodes:
-    transcription:
-      type: 'TYPO3.Neos:ContentCollection'
   properties:
     worldview:
       type: reference
@@ -111,18 +108,12 @@
         inlineEditable: true
         aloha:
           placeholder: 'Титул автора'
-    quizAudio:
-      type: TYPO3\Media\Domain\Model\ImageInterface
-      ui:
-        label: 'Аудио (до голосования)'
-        inspector:
-          group: 'general'
     quizText:
       type: string
       ui:
         inlineEditable: true
         aloha:
-          placeholder: 'Расшифровка аудио (до голосования)'
+          placeholder: 'Текст вопроса (до голосования)'
     fullVideo:
       type: string
       ui:
@@ -137,4 +128,3 @@
           placeholder: 'Расшифровка видео (после голосования)'
     votesCount:
       type: integer
-

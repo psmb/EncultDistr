@@ -1,0 +1,91 @@
+prototype(Sfi.Encult:Json).@class = 'Sfi\\Encult\\TypoScriptObjects\\JsonImplementation'
+
+json = TYPO3.TypoScript:Case {
+	worldviews {
+		condition = ${q(node).property('_name') == 'node-55afb944356ae'}
+		type = 'Sfi.Encult:WorldviewsJson'
+	}
+	questions {
+		condition = ${q(node).property('_name') == 'node-55afb779f1131'}
+		type = 'Sfi.Encult:QuestionsJson'
+	}
+	answers {
+		condition = ${q(node).is('[instanceof Sfi.Encult:Question]')}
+		type = 'Sfi.Encult:AnswersJson'
+	}
+}
+
+prototype(Sfi.Encult:JsonPage) < prototype(TYPO3.TypoScript:Http.Message) {
+	httpResponseHead {
+		headers.Content-Type = 'application/json;charset=utf-8'
+	}
+}
+
+
+
+
+prototype(Sfi.Encult:WorldviewsJson) < prototype(Sfi.Encult:JsonPage) {
+	content = TYPO3.TypoScript:Collection {
+		collection = ${q(node).children('[instanceof Sfi.Encult:Worldview]').get()}
+		itemRenderer = Sfi.Encult:WorldviewJson
+		itemName = 'node'
+		iterationName = 'iterator'
+	}
+	content.@process.1 = ${'{' + value + '}'}
+}
+
+prototype(Sfi.Encult:WorldviewJson) < prototype(Sfi.Encult:Json) {
+	id = ${q(node).property('uriPathSegment')}
+	title = ${q(node).property('title')}
+	@process.1 = ${'"' + q(node).property('uriPathSegment') + '": ' + value}
+	@process.2 = ${iterator.isLast ? value : value + ','}
+}
+
+
+
+
+prototype(Sfi.Encult:QuestionsJson) < prototype(Sfi.Encult:JsonPage) {
+	content = TYPO3.TypoScript:Collection {
+		collection = ${q(node).children('[instanceof Sfi.Encult:Question]').get()}
+		itemRenderer = Sfi.Encult:QuestionJson
+		itemName = 'node'
+		iterationName = 'iterator'
+	}
+	content.@process.1 = ${'{' + value + '}'}
+}
+
+prototype(Sfi.Encult:QuestionJson) < prototype(Sfi.Encult:Json) {
+	id = ${q(node).property('uriPathSegment')}
+	title = ${q(node).property('title')}
+	subTitle = ${q(node).property('subTitle')}
+	@process.1 = ${'"' + q(node).property('uriPathSegment') + '": ' + value}
+	@process.2 = ${iterator.isLast ? value : value + ','}
+}
+
+
+
+
+
+
+
+prototype(Sfi.Encult:AnswersJson) < prototype(Sfi.Encult:JsonPage) {
+	content = TYPO3.TypoScript:Collection {
+		collection = ${q(node).children('[instanceof Sfi.Encult:Answer]').get()}
+		itemRenderer = Sfi.Encult:AnswerJson
+		itemName = 'node'
+		iterationName = 'iterator'
+	}
+	content.@process.1 = ${'[' + value + ']'}
+}
+
+prototype(Sfi.Encult:AnswerJson) < prototype(Sfi.Encult:Json) {
+	id = ${q(node).property('_name')}
+	authorName = ${q(node).property('authorName')}
+	authorTitle = ${q(node).property('authorTitle')}
+	quizText = ${q(node).property('quizText')}
+	fullVideo = ${q(node).property('fullVideo')}
+	fullText = ${q(node).property('fullText')}
+	votesCount = ${q(node).property('votesCount')}
+	worldviewId = ${q(node).property('worldview').name}
+	@process.1 = ${iterator.isLast ? value : value + ','}
+}

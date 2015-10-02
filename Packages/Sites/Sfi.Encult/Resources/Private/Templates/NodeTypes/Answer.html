@@ -2,19 +2,11 @@
 {namespace ts=TYPO3\TypoScript\ViewHelpers}
 <div class="row">
 	<div class="columns">
-		
-		<f:form method="post" action="castVote" controller="Vote" package="Sfi.Encult" objectName="vote">
-			<f:form.hidden property="answerIdentifier" id="answerIdentifier" value="{node.identifier}" />
-			<f:form.hidden property="questionIdentifier" id="questionIdentifier" value="{question.identifier}" />
-			<f:form.hidden property="worldviewIdentifier" id="worldviewIdentifier" value="{node.properties.worldview.identifier}" />
-			<!-- TODO: get language dimension -->
-			<f:form.hidden property="language" id="language" value="rus" />
-			<f:form.submit id="vote" value="Vote" />
-		</f:form>
-		<p>{neos:contentElement.editable(property: 'authorName', tag: 'span')}</p>
-		<p><em>{neos:contentElement.editable(property: 'authorTitle', tag: 'span')}</em></p>
+		<p>{neos:contentElement.editable(property: 'authorName')}</p>
+		<p>{neos:contentElement.editable(property: 'authorTitle')}</p>
+		<p>{neos:contentElement.editable(property: 'quizText')}</p>
+		<p>{neos:contentElement.editable(property: 'fullText')}</p>
 		<div>Голоса: {node.properties.voteCount}</div>
-		<div>{encodedVideo -> f:format.raw()}</div>
-		<div>{transcription -> f:format.raw()}</div>
+		<f:debug title="title">{worldview}</f:debug>
 	</div>
 </div>
