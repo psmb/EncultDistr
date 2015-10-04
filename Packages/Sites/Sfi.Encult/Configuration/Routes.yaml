@@ -10,3 +10,11 @@
     node:
       handler: TYPO3\Neos\Routing\FrontendNodeRoutePartHandlerInterface
   appendExceedingArguments: true
+
+-
+  name: 'Voting'
+  uriPattern: 'vote-for-answer'
+  defaults:
+    '@package':    'Sfi.Encult'
+    '@controller': 'Vote'
+    '@action':     'castVote'

@@ -25,9 +25,6 @@ class VoteController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 	protected $voteRepository;
 
 	/**
-	 * Doctrine's Entity Manager. Note that "ObjectManager" is the name of the related
-	 * interface ...
-	 *
 	 * @Flow\Inject
 	 * @var \Doctrine\Common\Persistence\ObjectManager
 	 */
@@ -43,23 +40,27 @@ class VoteController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 	}
 
 	/**
-	 * @param Vote $vote
+	 * @param string $answerIdentifier
+	 * @param string $language
 	 *
 	 * @return void
 	 */
-	public function castVoteAction(Vote $vote) {
+	public function castVoteAction($answerIdentifier, $language = 'rus') {
 		$httpRequest = $this->controllerContext->getRequest()->getHttpRequest();
 		$response = $this->controllerContext->getResponse();
-
 		$ipAddress = $httpRequest->getClientIpAddress();
 		$now = new \DateTime('NOW');
 
-		$voteCookieId = 'vote_in_' . $vote->getQuestionIdentifier();
+		$answerNode = $this->liveContext->getNodeByIdentifier($answerIdentifier);
+		$questionIdentifier = $answerNode->getparent()->getIdentifier();
+		$worldviewIdentifier = $answerNode->getProperty('worldview')->getIdentifier();
+
+		$voteCookieId = 'vote_in_' . $questionIdentifier;
 		if ($httpRequest->hasCookie($voteCookieId)) {
 			throw new \Exception('You have already voted for this question!', 1427315962);
 		}
 		// Set Answer id as a value of a cookie, to be used in frontend
-		$voteCookie = new Cookie($voteCookieId, $vote->getAnswerIdentifier(), 0, 72000);
+		$voteCookie = new Cookie($voteCookieId, $answerIdentifier, 0, 72000);
 		$response->setCookie($voteCookie);
 
 		if ($httpRequest->hasCookie('returning')) {
@@ -69,15 +70,20 @@ class VoteController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 			$returningCookie = new Cookie('returning', $now->format('U'));
 			$response->setCookie($returningCookie);
 		}
-		$vote->setDateTime($now);
-		$vote->setIsReturning($isReturning);
-		$vote->setIpAddress($ipAddress);
 
 		// Update vote count on the answer node
-		$answerNode = $this->liveContext->getNodeByIdentifier($vote->getAnswerIdentifier());
 		$voteCount = $answerNode->getProperty('voteCount');
 		$voteCount = $voteCount ? $voteCount + 1 : 1;
 		$answerNode->setProperty('voteCount', $voteCount);
+
+		$vote = New Vote();
+		$vote->setAnswerIdentifier($answerIdentifier);
+		$vote->setQuestionIdentifier($questionIdentifier);
+		$vote->setWorldviewIdentifier($worldviewIdentifier);
+		$vote->setDateTime($now);
+		$vote->setLanguage($language);
+		$vote->setIsReturning($isReturning);
+		$vote->setIpAddress($ipAddress);
 
 		// Save the vote (for statistics and logging)
 		$this->voteRepository->add($vote);
