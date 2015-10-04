@@ -86,6 +86,6 @@ prototype(Sfi.Encult:AnswerJson) < prototype(Sfi.Encult:Json) {
 	fullVideo = ${q(node).property('fullVideo')}
 	fullText = ${q(node).property('fullText')}
 	votesCount = ${q(node).property('votesCount')}
-	worldviewId = ${q(node).property('worldview').name}
+	worldviewId = ${q(node).property('worldview').properties.uriPathSegment}
 	@process.1 = ${iterator.isLast ? value : value + ','}
 }
