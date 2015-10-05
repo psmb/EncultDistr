@@ -45,148 +45,39 @@
      </properties>
     </variant>
     <node identifier="923d671e-c302-17ed-69ee-4d0da951c914" nodeName="node-55afb779f1131">
-     <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos:Shortcut" version="3" removed="" hidden="" hiddenInIndex="1">
+     <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="4" removed="" hidden="" hiddenInIndex="1">
       <dimensions/>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-07-22T15:32:09+00:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T15:49:36+00:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-22T15:49:36+00:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-10-01T13:15:28+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-01T13:15:27+00:00</lastPublicationDateTime>
       <properties>
        <uriPathSegment __type="string">voprosy</uriPathSegment>
-       <targetMode __type="string">firstChildNode</targetMode>
        <title __type="string">Вопросы</title>
-       <target __type="string"></target>
+       <canonicalLink __type="string"></canonicalLink>
       </properties>
      </variant>
-     <node identifier="0e1f08b5-56d4-90ae-2bb3-5d309f317836" nodeName="node-55afb7b90e472">
-      <variant sortingIndex="100" workspace="live" nodeType="Sfi.Encult:Question" version="2" removed="" hidden="" hiddenInIndex="">
+     <node identifier="ca2d72b7-4dc4-bd93-41c5-57163dbf728e" nodeName="main">
+      <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
        <dimensions/>
        <accessRoles __type="array"/>
-       <creationDateTime __type="object" __classname="DateTime">2015-07-22T15:33:13+00:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T15:40:47+00:00</lastModificationDateTime>
-       <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-22T15:40:47+00:00</lastPublicationDateTime>
-       <properties>
-        <uriPathSegment __type="string">proshat-li-vraga</uriPathSegment>
-        <canonicalLink __type="string"></canonicalLink>
-        <title __type="string">Прощать ли врага?</title>
-       </properties>
+       <creationDateTime __type="object" __classname="DateTime">2015-10-01T13:15:19+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-10-01T13:15:28+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-01T13:15:27+00:00</lastPublicationDateTime>
+       <properties/>
       </variant>
-      <node identifier="6defd444-afd6-9280-cd15-c066f4a228e7" nodeName="node-55afba0fa89ef">
-       <variant sortingIndex="100" workspace="live" nodeType="Sfi.Encult:Answer" version="18" removed="" hidden="" hiddenInIndex="">
-        <dimensions/>
-        <accessRoles __type="array"/>
-        <creationDateTime __type="object" __classname="DateTime">2015-07-22T15:43:11+00:00</creationDateTime>
-        <lastModificationDateTime __type="object" __classname="DateTime">2015-08-03T17:30:40+00:00</lastModificationDateTime>
-        <lastPublicationDateTime __type="object" __classname="DateTime">2015-08-03T11:28:11+00:00</lastPublicationDateTime>
-        <properties>
-         <uriPathSegment __type="string">da-konechno</uriPathSegment>
-         <canonicalLink __type="string"></canonicalLink>
-         <title __type="string">Да, конечно</title>
-         <titleOverride __type="string"></titleOverride>
-         <metaDescription __type="string"></metaDescription>
-         <metaKeywords __type="string"></metaKeywords>
-         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
-         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
-         <twitterCardType __type="string"></twitterCardType>
-         <twitterCardCreator __type="string"></twitterCardCreator>
-         <twitterCardTitle __type="string"></twitterCardTitle>
-         <twitterCardDescription __type="string"></twitterCardDescription>
-         <twitterCardImage __type="string"></twitterCardImage>
-         <openGraphType __type="string"></openGraphType>
-         <openGraphTitle __type="string"></openGraphTitle>
-         <openGraphDescription __type="string"></openGraphDescription>
-         <openGraphImage __type="string"></openGraphImage>
-         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
-         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
-         <worldview __type="string">02e71cc6-5a18-6c33-015a-a4dfbb9184ec</worldview>
-         <authorName __type="string">Христианин Вася</authorName>
-         <authorTitle __type="string">Профессор кислых щей</authorTitle>
-         <encodedVideo __type="string">http://www.youtube.com/watch?v=a20xYpQG6uc</encodedVideo>
-         <decodedVideo __type="string">http://www.youtube.com/watch?v=jEWs5bbITIM</decodedVideo>
-        </properties>
-       </variant>
-       <node identifier="215730e7-2135-864d-8771-c3cca26abbab" nodeName="transcription">
-        <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
-         <dimensions/>
-         <accessRoles __type="array"/>
-         <creationDateTime __type="object" __classname="DateTime">2015-07-22T15:43:11+00:00</creationDateTime>
-         <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T15:47:33+00:00</lastModificationDateTime>
-         <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-22T15:47:32+00:00</lastPublicationDateTime>
-         <properties/>
-        </variant>
-       </node>
-      </node>
-      <node identifier="947caabe-bc33-bcaa-c251-3750bdca0001" nodeName="node-55bf4f6f3af3f">
-       <variant sortingIndex="150" workspace="live" nodeType="Sfi.Encult:Answer" version="5" removed="" hidden="" hiddenInIndex="">
-        <dimensions/>
-        <accessRoles __type="array"/>
-        <creationDateTime __type="object" __classname="DateTime">2015-08-03T11:24:31+00:00</creationDateTime>
-        <lastModificationDateTime __type="object" __classname="DateTime">2015-08-03T11:28:11+00:00</lastModificationDateTime>
-        <lastPublicationDateTime __type="object" __classname="DateTime">2015-08-03T11:28:11+00:00</lastPublicationDateTime>
-        <properties>
-         <uriPathSegment __type="string">net-ne-stoit</uriPathSegment>
-         <canonicalLink __type="string"></canonicalLink>
-         <title __type="string">Нет, не стоит</title>
-         <titleOverride __type="string"></titleOverride>
-         <metaDescription __type="string"></metaDescription>
-         <metaKeywords __type="string"></metaKeywords>
-         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
-         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
-         <twitterCardType __type="string"></twitterCardType>
-         <twitterCardCreator __type="string"></twitterCardCreator>
-         <twitterCardTitle __type="string"></twitterCardTitle>
-         <twitterCardDescription __type="string"></twitterCardDescription>
-         <twitterCardImage __type="string"></twitterCardImage>
-         <openGraphType __type="string"></openGraphType>
-         <openGraphTitle __type="string"></openGraphTitle>
-         <openGraphDescription __type="string"></openGraphDescription>
-         <openGraphImage __type="string"></openGraphImage>
-         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
-         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
-         <authorName __type="string">Буддист Петя</authorName>
-         <authorTitle __type="string">Монах-отшельник</authorTitle>
-         <encodedVideo __type="string">http://www.youtube.com/watch?v=ZUOLu4Gf8zs</encodedVideo>
-         <decodedVideo __type="string">http://www.youtube.com/watch?v=ZUOLu4Gf8zs</decodedVideo>
-        </properties>
-       </variant>
-       <node identifier="a7a51386-1b6b-89ea-5754-7954ad4926f4" nodeName="transcription">
-        <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
-         <dimensions/>
-         <accessRoles __type="array"/>
-         <creationDateTime __type="object" __classname="DateTime">2015-08-03T11:24:31+00:00</creationDateTime>
-         <lastModificationDateTime __type="object" __classname="DateTime">2015-08-03T11:27:03+00:00</lastModificationDateTime>
-         <lastPublicationDateTime __type="object" __classname="DateTime">2015-08-03T11:27:02+00:00</lastPublicationDateTime>
-         <properties/>
-        </variant>
-       </node>
-      </node>
      </node>
-    </node>
-    <node identifier="f7100f4c-b21b-be83-d9f6-0cd0f9b5c7d4" nodeName="node-55afb944356ae">
-     <variant sortingIndex="175" workspace="live" nodeType="TYPO3.Neos:Shortcut" version="4" removed="" hidden="" hiddenInIndex="1">
-      <dimensions/>
-      <accessRoles __type="array"/>
-      <creationDateTime __type="object" __classname="DateTime">2015-07-22T15:39:58+00:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T15:49:36+00:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-22T15:49:36+00:00</lastPublicationDateTime>
-      <properties>
-       <uriPathSegment __type="string">mirovozzreniya</uriPathSegment>
-       <targetMode __type="string">firstChildNode</targetMode>
-       <title __type="string">Мировоззрения</title>
-       <target __type="string"></target>
-      </properties>
-     </variant>
-     <node identifier="02e71cc6-5a18-6c33-015a-a4dfbb9184ec" nodeName="node-55afb966ba691">
-      <variant sortingIndex="100" workspace="live" nodeType="Sfi.Encult:Worldview" version="3" removed="" hidden="" hiddenInIndex="">
+     <node identifier="935f9006-3155-b3c7-aa79-cbcfcc08e533" nodeName="node-560ce15d2223c">
+      <variant sortingIndex="200" workspace="live" nodeType="Sfi.Encult:Question" version="3" removed="" hidden="" hiddenInIndex="">
        <dimensions/>
        <accessRoles __type="array"/>
-       <creationDateTime __type="object" __classname="DateTime">2015-07-22T15:40:22+00:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T16:51:33+00:00</lastModificationDateTime>
-       <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-22T16:51:33+00:00</lastPublicationDateTime>
+       <creationDateTime __type="object" __classname="DateTime">2015-10-01T07:31:41+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T12:45:54+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T12:45:53+00:00</lastPublicationDateTime>
        <properties>
-        <uriPathSegment __type="string">hristianstvo</uriPathSegment>
+        <uriPathSegment __type="string">samoubijstvo</uriPathSegment>
         <canonicalLink __type="string"></canonicalLink>
-        <title __type="string">Христианство</title>
+        <title __type="string">Самоубийство</title>
         <titleOverride __type="string"></titleOverride>
         <metaDescription __type="string"></metaDescription>
         <metaKeywords __type="string"></metaKeywords>
@@ -203,36 +94,1472 @@
         <openGraphImage __type="string"></openGraphImage>
         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+        <subTitle __type="string">Может ли человек добровольно лишить себя жизни?</subTitle>
        </properties>
       </variant>
-      <node identifier="44653cab-2680-824c-96b8-80c5b8297a2e" nodeName="main">
-       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="1" removed="" hidden="" hiddenInIndex="">
+      <node identifier="3de7a423-b22a-735b-939a-e9c9b6f6e713" nodeName="node-5612d815ad86b">
+       <variant sortingIndex="600" workspace="live" nodeType="Sfi.Encult:Answer" version="3" removed="" hidden="" hiddenInIndex="">
         <dimensions/>
         <accessRoles __type="array"/>
-        <creationDateTime __type="object" __classname="DateTime">2015-07-22T16:01:26+00:00</creationDateTime>
-        <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T16:01:26+00:00</lastModificationDateTime>
-        <properties/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:05:41+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:19:06+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:19:06+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">saentologiya</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Саентология</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Максим Рубцов</authorName>
+         <authorTitle __type="string">священник Саентологической церкви Москвы&lt;br/&gt;&lt;br/&gt;</authorTitle>
+         <quizText __type="string">Самоубийца – это уже полностью сломленное духовное существо, в том что касается его текущей жизни. Живёт же духовное существо снова и снова, берёт новые и новые тела, меняет и меняет бытийности своего существования. Состояние его как духовного существа и человека в последующих жизнях не определена – оно необязательно будет плохим или хорошим. Однако при сходных обстоятельствах и проблемах в последующих жизнях (обстоятельствах, которые стали для человека непереносимы настолько, что он закончил жизнь самоубийством) самоубийца будет «ломаться» теперь намного легче. Никто,  однако, не вправе злиться на самоубийцу за его выбор.</quizText>
+         <fullVideo __type="string">141279141</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">c999f81e-adcc-384c-f903-9a4c928794ad</worldview>
+        </properties>
        </variant>
-       <node identifier="b5c334a4-0ae2-0abb-4069-a3a49268a450" nodeName="node-55b0cbed28004">
-        <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="4" removed="" hidden="" hiddenInIndex="">
-         <dimensions/>
-         <accessRoles __type="array"/>
-         <creationDateTime __type="object" __classname="DateTime">2015-07-23T11:11:41+00:00</creationDateTime>
-         <lastModificationDateTime __type="object" __classname="DateTime">2015-08-03T11:24:12+00:00</lastModificationDateTime>
-         <lastPublicationDateTime __type="object" __classname="DateTime">2015-08-03T11:24:12+00:00</lastPublicationDateTime>
-         <properties>
-          <text __type="string">&lt;p&gt;jjjjj&lt;/p&gt;</text>
-         </properties>
-        </variant>
-       </node>
+      </node>
+      <node identifier="518a8004-dc3d-4c4f-1049-1fb961f3fffc" nodeName="node-5612d82b2dcf7">
+       <variant sortingIndex="650" workspace="live" nodeType="Sfi.Encult:Answer" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:06:03+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:31:32+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:31:31+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">telema</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Телема</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Олег Телемский</authorName>
+         <authorTitle __type="string">глава Ордена восточных тамплиеров России (телема)</authorTitle>
+         <quizText __type="string">&lt;p&gt;Совершая самоубийство, человек делает нечто необратимое.
+Это та крайняя мера, которая всегда остается как последний аргумент. Человек
+вправе решить уйти из жизни, если сочтёт что его миссия и его роль закончены.
+Человек – это центр своей собственной вселенной, поэтому он вправе выбирать,
+как жить и как умереть, если у него есть возможность сделать свой выбор. Выбор
+смерти заслуживает уважения (если конечно речь не идёт о истеричке, хотевшей
+напугать маму).&lt;/p&gt;</quizText>
+         <fullVideo __type="string">141272349</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">d05b6fb7-4d4b-ffaa-b29c-3fe90bbb8a78</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="ec466c36-da19-5cec-eceb-69067c495d2c" nodeName="node-5612d83320302">
+       <variant sortingIndex="700" workspace="live" nodeType="Sfi.Encult:Answer" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:06:11+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:40:53+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:40:52+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">buddizm</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Буддизм</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Александр Шаукатович Койбагаров</authorName>
+         <authorTitle __type="string">президент Российской Ассоциации буддистов Алмазного пути традиции Карма Кагью</authorTitle>
+         <quizText __type="string">Человеческая жизнь – редкий и великий дар. Безусловно, человек должен её ценить и не растрачивать зря, ведь из всех живых существ только человек может достичь полного освобождения от страданий. Добровольный уход из жизни бывает разный: если это подвиг, связанный с самопожертвованием ради блага других, то в этом нет ничего порочного, он переродится в хороших уделах. Если же это глупые душевные терзания на почве себялюбия, то это безусловно неправильно. В жизни всё можно исправить.</quizText>
+         <fullVideo __type="string">141310547</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">55c38588-514f-cdda-5832-b1dd3ea57aae</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="1c8afc62-5164-4823-2a26-7abe0bc0e845" nodeName="node-5612d83ca3cd1">
+       <variant sortingIndex="750" workspace="live" nodeType="Sfi.Encult:Answer" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:06:20+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:38:49+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:38:48+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">krishnaizm</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Кришнаизм</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Бхакти Вигьяна Госвами</authorName>
+         <authorTitle __type="string">президент Центра обществ сознания Кришны в России</authorTitle>
+         <quizText __type="string">Самоубийство – это крайняя степень отрицания Бога и Его милости. Душа вечна, но когда человек отворачивается от Бога и начинает отрицать Его существование, он тем самым ставит под сомнение своё собственное существование. В сущности, человек уже в своём уме совершает самоубийство в тот момент, когда он начинает отрицать существование Бога. Это самоубийственное отрицание Бога, как правило, приводит ко множеству разных форм самоубийства – от медленных и, казалось бы, &quot;безобидных&quot;, таких, например, как курение, до гораздо более страшных форм, таких как убийство других людей и в конце концов убийство самого себя. Иначе говоря, самоубийство – это доведённая до логического конца стратегия самоуничтожения, формирующаяся в сознании человека тогда, когда он сознательно бунтует против существования Бога. Ни к каким хорошим последствиям оно привести не может.</quizText>
+         <fullVideo __type="string">141282708</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">0058f273-592c-9110-7b88-766c2e17952c</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="fdab4e43-54b8-ac96-09ce-e2e0305a3132" nodeName="node-5612d84238ceb">
+       <variant sortingIndex="800" workspace="live" nodeType="Sfi.Encult:Answer" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:06:26+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:09:44+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:09:44+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">islam</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Ислам</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Ильдар Хазрат Алибеков</authorName>
+         <authorTitle __type="string">преподаватель Московского исламского института</authorTitle>
+         <quizText __type="string">Человек как существо свободное может делать всё что угодно. Но Всевышний прямо запретил человеку лишать себя жизни. Жизнь дана не для того чтобы её губить, смерть в конце пути сама настигнет человека. Лишь Всевышний дарует и забирает жизнь.  Необходимо пользоваться этим даром во благо, веруя в Провидение и не отчаиваясь. И посему самоубийство является омерзительным поступком, за который человека может ждать крайне суровое наказание в посмертном существовании.</quizText>
+         <fullVideo __type="string">141285909</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">131f94b4-b780-a7b6-598c-649f9ea78608</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="16d42853-752b-7fc8-4889-848352321717" nodeName="node-5612d84c32ef2">
+       <variant sortingIndex="850" workspace="live" nodeType="Sfi.Encult:Answer" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:06:36+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:03:06+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:03:06+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">progressivnyj-iudaizm</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Прогрессивный иудаизм</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Леонид Бимбат</authorName>
+         <authorTitle __type="string">раввин Общины прогрессивного иудаизм Ле-Дор Ва-Дор</authorTitle>
+         <quizText __type="string">Жизнь дарована человеку Богом, никто не имеет права насильственно её прекращать, даже сам человек, который получил эту жизнь. Самоубийство не может быть оправдано никакими обстоятельствами, потому что жизнь – это сама по себе величайшая ценность. Даже в самых тяжёлых жизненных ситуациях вера, то есть доверие Всевышнему, и поддержка окружающих позволяют человеку выдержать любые испытания.</quizText>
+         <fullVideo __type="string">141257567</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">4afa362f-f066-60b8-3dc0-7d6a1d9134c6</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="dd413b93-8dc3-f503-939f-e824c356743e" nodeName="node-5612d85523ff4">
+       <variant sortingIndex="900" workspace="live" nodeType="Sfi.Encult:Answer" version="11" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:06:45+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:25:00+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:25:00+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">pravoslavie</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Православие</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">священник Димитрий (Богоявленский)</authorName>
+         <authorTitle __type="string">игумен Русской Православной Церкви</authorTitle>
+         <quizText __type="string">Человек наделён даром свободы распоряжаться своей жизнью по собственному усмотрению. Но дар предполагает ответственность и благодарность Тому, Кто является источником самой жизни. Самоубийство, как и любое убийство, является грехом, говорящим о том, что человек, совершающий такие действия, утратил или так и не обрёл связь с Богом.&lt;br/&gt;</quizText>
+         <fullVideo __type="string">141226528</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">4564967d-947b-348f-6365-80648879d037</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="a0dd7071-a13d-edf4-d2d1-ae45e8bac4bd" nodeName="node-5612d860282ad">
+       <variant sortingIndex="950" workspace="live" nodeType="Sfi.Encult:Answer" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:06:56+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">ateizm</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Атеизм</title>
+        </properties>
+       </variant>
       </node>
      </node>
+     <node identifier="7a58b64b-7499-8873-24a1-6f9c9b527ecc" nodeName="node-5612d87fb58c5">
+      <variant sortingIndex="250" workspace="live" nodeType="Sfi.Encult:Question" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:07:27+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">mnogozhyonstvo</uriPathSegment>
+        <canonicalLink __type="string"></canonicalLink>
+        <title __type="string">Многожёнство</title>
+       </properties>
+      </variant>
+      <node identifier="eb8ba011-ac20-451d-bdcc-da5439a8c2ac" nodeName="node-5612d8bda1b04">
+       <variant sortingIndex="100" workspace="live" nodeType="Sfi.Encult:Answer" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:08:29+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:19:06+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:19:06+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">saentologiya</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Саентология</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Максим Рубцов</authorName>
+         <authorTitle __type="string">священник Саентологической церкви Москвы</authorTitle>
+         <quizText __type="string">Духовное существо по сути своей моногамно. Это означает, что в такой части жизнедеятельности, как семья, любой её член – и жена и муж – имеют право на равное количество внимания. В случае многожёнства такой баланс нарушается. Тем не менее, по сути, семейные отношения  в самом обычном «земном» их проявлении не являются деятельностью продвижения  по духовному Пути. Если традиции общества позволяют многожёнство, это не может остановить духовный прогресс человека.Человек же, который идёт к собственному духовному совершенству, постепенно становится настолько моногамным, насколько это вообще  возможно. Муж или жена (один муж и одна жена)  – это главный спутник по жизни, а возможно и в последующих жизнях (если они того хотят).</quizText>
+         <fullVideo __type="string">141268825</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">c999f81e-adcc-384c-f903-9a4c928794ad</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="eb47fdd1-48ef-579c-c566-717652aaf979" nodeName="node-5612d8c75cece">
+       <variant sortingIndex="150" workspace="live" nodeType="Sfi.Encult:Answer" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:08:39+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:34:15+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:34:15+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">telema</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Телема</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Олег Телемский</authorName>
+         <authorTitle __type="string">глава Ордена восточных тамплиеров России (телема)</authorTitle>
+         <quizText __type="string">Каждый мужчина и каждая женщина – звезда. Это означает, что у каждого из нас есть своя, абсолютно неповторимая орбита, предопределяющая специфику семейных, культурных и эротических моделей. Поэтому для одного человека, абсолютно естественна будет моногамия, для другого полигамия, а для третьего аскетизм. Важно понять что ни одна из этих моделей не является ни лучше ни хуже другой – именно потому, что каждый индивид является центром своей вселенной. Проблемы возникают, когда человек не знает своей природы, и, скажем, будучи моногамным, пытается добиться как можно большего количества женщин, чтобы выглядеть в глазах друзей высокоранговым, или наоборот – полигамный человек, пытающийся втиснуть себя в рамки единобрачия. Поэтому важнейшей задачей с нашей точки зрения является исследование и раскрытие своей природы.</quizText>
+         <fullVideo __type="string">141272351</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">d05b6fb7-4d4b-ffaa-b29c-3fe90bbb8a78</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="dd632ff5-00af-57f3-7217-527280daa152" nodeName="node-5612d8d12e779">
+       <variant sortingIndex="200" workspace="live" nodeType="Sfi.Encult:Answer" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:08:49+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:38:49+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:38:48+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">krishnaizm</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Кришнаизм</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Бхакти Вигьяна Госвами</authorName>
+         <authorTitle __type="string">президент Центра обществ сознания Кришны в России</authorTitle>
+         <quizText __type="string">Многожёнство, безусловно, лучше, чем беспорядочные половые отношения, усиливающие власть низшей, плотской природы над человеком. Поэтому полигиния допустима, но надо понимать, что это всего лишь уступка человеческой природе. Моногамный брак, который, к сожалению, стал почти недостижимым идеалом в сознании современных людей, конечно же, более высокая форма организации. В моногамных отношениях человеку легче одухотворить свой брак и преобразить плотскую страсть в эмоциональную близость и бескорыстное служение. Редкие люди с очень сильно развитыми духовными наклонностями способны целиком сублимировать эту энергию – именно сублимировать, а не подавить – направив её на развитие отношений с Богом.</quizText>
+         <fullVideo __type="string">141282179</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">0058f273-592c-9110-7b88-766c2e17952c</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="e0f1cec5-a8c7-f972-deee-d08bc7bb3a85" nodeName="node-5612d8da089da">
+       <variant sortingIndex="250" workspace="live" nodeType="Sfi.Encult:Answer" version="5" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:08:58+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:13:24+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:13:24+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">islam</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Ислам</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Ильдар Хазрат Алибеков</authorName>
+         <authorTitle __type="string">преподаватель Московского исламского института</authorTitle>
+         <quizText __type="string">Творец мира разрешил ограниченное многожёнство, но только в том случае, если это оправдано благими целями – продолжением рода или защитой одинокой женщины и её детей. Для большинства мужчин многожёнство является нежелательным или даже запретным, поскольку они не смогут быть справедливыми к своим супругам, воздавать им должную любовь и заботу. Поэтому важно изначально исходить из того, что первая супруга станет единственной. В Своём Откровении Всевышний говорит о том, что создал всё на земле парами, поэтому наиболее разумным является моногамный брак.</quizText>
+         <fullVideo __type="string">141285492</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">131f94b4-b780-a7b6-598c-649f9ea78608</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="fc2f77a7-4b02-7860-05df-05ecc33a75da" nodeName="node-5612d8e412de5">
+       <variant sortingIndex="300" workspace="live" nodeType="Sfi.Encult:Answer" version="5" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:09:08+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:04:36+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:04:35+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">progressivnyj-iudaizm</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Прогрессивный иудаизм</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Леонид Бимбат</authorName>
+         <authorTitle __type="string">раввин Общины прогрессивного иудаизм Ле-Дор Ва-Дор</authorTitle>
+         <quizText __type="string">Моногамный брак является продуктом исторического развития общества, а значит, и религии. В древности существовала другая модель семейных отношений, которая соответствовала нормам, сформировавшимся в определённых исторических условиях, когда положение женщины вне брака было более уязвимо, когда вдовы нуждались в защите, когда с бесплодием нельзя было ничего сделать, а наличие потомства было критически важно. Поэтому милосердный Творец позволил людям решать эти проблемы благодаря многожёнству. Сегодня, когда все они могут решаться другими способами, великие религиозные учителя запретили многожёнство.</quizText>
+         <fullVideo __type="string">141257062</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">4afa362f-f066-60b8-3dc0-7d6a1d9134c6</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="10b9e1ef-8900-c91c-0899-cfd4c72abdff" nodeName="node-5612d8ececc49">
+       <variant sortingIndex="350" workspace="live" nodeType="Sfi.Encult:Answer" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:09:16+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:27:05+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:27:05+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">pravoslavie</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Православие</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">священник Димитрий (Богоявленский</authorName>
+         <authorTitle __type="string">игумен Русской Православной Церкви</authorTitle>
+         <quizText __type="string">Многожёнство недопустимо по той причине, что основой семьи является брак. Брак был установлен Богом между одним мужем и одной женой. По жестокосердию своему люди отошли от этой нормы, но Богочеловек эту норму восстановил.&lt;br/&gt;</quizText>
+         <fullVideo __type="string">141226526</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">4564967d-947b-348f-6365-80648879d037</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="9d0f98be-d3d5-8a71-fd10-c4dde4595486" nodeName="node-5612d8f55fa4c">
+       <variant sortingIndex="400" workspace="live" nodeType="Sfi.Encult:Answer" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:09:25+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">ateizm</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Атеизм</title>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="f177282a-8a15-93ea-6755-501acf461829" nodeName="node-5612d9057fb7e">
+       <variant sortingIndex="450" workspace="live" nodeType="Sfi.Encult:Answer" version="6" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:09:41+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:54:23+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:54:23+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">buddizm</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Буддизм</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Александр Шаукатович Койбагаров</authorName>
+         <authorTitle __type="string">президент Российской Ассоциации буддистов Алмазного пути традиции Карма Кагью</authorTitle>
+         <quizText __type="string">Мужчина свободен выбирать, сколько женщин брать ему в жёны. Если он способен прокормить большое количество жён, большое количество детей, а также есть добровольное согласие женщины, то многожёнство приемлемо. Главное, чтобы причиной многоженства было стремление народить как можно больше детей, дать им хорошее воспитание, чтобы он были достойными представителями своей семьи, а не психическое сексуальное расстройство. В каких-то случаях многожёнство – это добродетель. Почему бы состоятельному мужчине не жениться на женщинах, которым не повезло в первом браке, которые не смогли выйти замуж, либо у которых погиб муж. Почему бы мужчине не взять вторую жену, сохранив брак с первой, если у первой нет детей. Разве будет правильным бросать человека за бесплодие? В брачных отношениях главное – преодоление эгоизма, а всё остальное вторично.</quizText>
+         <fullVideo __type="string">141310059</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">55c38588-514f-cdda-5832-b1dd3ea57aae</worldview>
+        </properties>
+       </variant>
+      </node>
+     </node>
+     <node identifier="1a274de0-91f4-a966-c11a-4845e603cda9" nodeName="node-5612d88bcf1d7">
+      <variant sortingIndex="275" workspace="live" nodeType="Sfi.Encult:Question" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:07:39+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">rostovshichestvo</uriPathSegment>
+        <canonicalLink __type="string"></canonicalLink>
+        <title __type="string">Ростовщичество</title>
+       </properties>
+      </variant>
+      <node identifier="36401dbe-6f74-2c74-94e6-8c8dd4c6f9a6" nodeName="node-5612d91845179">
+       <variant sortingIndex="100" workspace="live" nodeType="Sfi.Encult:Answer" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:10:00+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:21:18+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:21:18+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">saentologiya</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Саентология</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Максим Рубцов</authorName>
+         <authorTitle __type="string">священник Саентологической церкви Москвы</authorTitle>
+         <quizText __type="string">Ростовщичество в его обычном виде не является деятельностью, которая помогает духовному совершенству самого ростовщика. Ростовщичество приводит к созданию финансового рабства, зависимости о ростовщика. Ростовщичество опосредованно уменьшает и духовную свободу человека, следовательно, эта деятельность должна быть под запретом. Тем не менее надо понимать, что ростовщик – это человек, которые дает деньги под заведомо большие проценты, и это может из-за непонимания распространиться и на людей, которые дают деньги в долг и даже берут проценты – хороший пример этого инвестор. Инвестиции – это хорошо. Ростовщичество – это зло. Инвестор рискует вместе с тобой, ростовщик заберёт и вытрясет из тебя деньги вне зависимости от результата и жизненных коллизий.</quizText>
+         <fullVideo __type="string">141279887</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">c999f81e-adcc-384c-f903-9a4c928794ad</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="d73ae4e4-b7e6-f4af-dcdc-5fb463f8139f" nodeName="node-5612d926f2115">
+       <variant sortingIndex="150" workspace="live" nodeType="Sfi.Encult:Answer" version="5" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:10:15+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:56:13+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:56:13+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">buddizm</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Буддизм</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Александр Шаукатович Койбагаров</authorName>
+         <authorTitle __type="string">президент Российской Ассоциации буддистов Алмазного пути традиции Карма Кагью</authorTitle>
+         <quizText __type="string">Ростовщичество под разумный процент приемлемо. Но оно должно контролироваться какой-то незаинтересованной стороной. Контроль нужен, чтобы оградить слабых людей от финансовой кабалы. Все люди по своей сути слабы, многие из них совершают ошибки, идя на поводу своих слабостей, грехов, страстей, страха перед чем то. Отсюда и спрос на необоснованный процент. Это как наркотик: если он есть в продаже, то спрос всегда будет. В свою очередь контролируемое ростовщичество благотворно влияет на развитие бизнеса, вызывает стимул взявшего кредит побыстрее отдать его, пополняет оборотные средства бизнеса, который в этом нуждается. Разве не справедливо дать процент от своей прибыли тому, кто помог тебе сделать твой бизнес лучше и помог заработать тебе денег. В свою очередь ростовщичество между братьями и друзьями и теми людьми, кто на этом не специализируется, достоин осуждения.</quizText>
+         <fullVideo __type="string">141310889</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">55c38588-514f-cdda-5832-b1dd3ea57aae</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="75a87215-2562-0e39-98a2-ed63ca9fdeec" nodeName="node-5612d92feb091">
+       <variant sortingIndex="200" workspace="live" nodeType="Sfi.Encult:Answer" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:10:23+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:34:15+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:34:15+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">telema</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Телема</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Олег Телемский</authorName>
+         <authorTitle __type="string">глава Ордена восточных тамплиеров России (телема)</authorTitle>
+         <quizText __type="string">Деньги – это инструмент, позволяющий человеку осуществить свою природу тем или иным образом. Осуждая ростовщичество, мы рискуем ставить двойные стандарты, допуская для государства и крупных компаний то, что оказывается запретно для индивида. Человек имеет полное право распоряжаться своим имуществом и своими средствами, как он считает необходимым. Это краеугольный камень. Остальное частности. Например, сомнительно будет выглядеть человек который будет давать под проценты деньги своему близкому другу или единоверцу. Однако в любом случае это его личный выбор.</quizText>
+         <fullVideo __type="string">141272356</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">d05b6fb7-4d4b-ffaa-b29c-3fe90bbb8a78</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="fb856cb6-583e-d280-4a88-33447e432edb" nodeName="node-5612d939ec601">
+       <variant sortingIndex="250" workspace="live" nodeType="Sfi.Encult:Answer" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:10:33+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:38:49+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:38:48+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">krishnaizm</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Кришнаизм</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Бхакти Вигьяна Госвами</authorName>
+         <authorTitle __type="string">президент Центра обществ сознания Кришны в России</authorTitle>
+         <quizText __type="string">Занятие это древнее, но люди, его практикующие, традиционно не в чести. Только относительно недавно оно стало даже почётным, прежде всего среди тех, кто отринул традиционную культуру и религиозность. Очевидно, что ростовщичество оскверняет сознание и как способ поддерживать существование для людей, претендующих на духовный статус, недопустимо. Хотя какое-то, весьма ограниченное, место в человеческом обществе у этого занятия есть.</quizText>
+         <fullVideo __type="string">141282961</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">0058f273-592c-9110-7b88-766c2e17952c</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="bbad8b6b-b908-0f87-515d-a06f0eca3e5b" nodeName="node-5612d9443e69b">
+       <variant sortingIndex="300" workspace="live" nodeType="Sfi.Encult:Answer" version="5" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:10:44+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:13:24+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:13:24+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">islam</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Ислам</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Ильдар Хазрат Алибеков</authorName>
+         <authorTitle __type="string">преподаватель Московского исламского института</authorTitle>
+         <quizText __type="string">Творец определил ростовщичество как большой грех, из-за которого ростовщик будет несчастен в обоих мирах – дольнем и вечном. Ростовщичество является корнем многих зол в обществе, причиной кризиса в экономике многих стран, ухудшения благосостояния людей и превращения их из категории свободных в рабов. Задачи, которые решаются сегодня посредством ростовщичества, могут решаться при помощи сделок, основанных на справедливом распределении материальных благ, об условиях которого сообщил в Своем Писании Всевышний и о котором говорил Его Посланник в своих изречениях. Ростовщичество же приносит страдание всему человечеству, поэтому оно никак не может быть допустимым.</quizText>
+         <fullVideo __type="string">141285908</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">131f94b4-b780-a7b6-598c-649f9ea78608</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="a52e0dea-ee41-a8e2-f66b-1ca5b7cd1566" nodeName="node-5612d94dd6bff">
+       <variant sortingIndex="350" workspace="live" nodeType="Sfi.Encult:Answer" version="5" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:10:53+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:05:25+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:05:25+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">progressivnyj-iudaizm</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Прогрессивный иудаизм</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Леонид Бимбат</authorName>
+         <authorTitle __type="string">раввин Общины прогрессивного иудаизм Ле-Дор Ва-Дор</authorTitle>
+         <quizText __type="string">Господь запретил давать деньги в долг под проценты людям из ближайшего окружения, ибо важно поддерживать прежде всего своих близких, особенно если они близки тебе не только по крови, но и по духу. Распространить такую поддержку на весь мир, к сожалению, невозможно, поэтому вполне допустимо давать деньги в рост тем, кто твоими близкими не является, а тем более тем, кто не признает Господа и Его запреты.</quizText>
+         <fullVideo __type="string">141257436</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">4afa362f-f066-60b8-3dc0-7d6a1d9134c6</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="af1c2fa0-7a6b-bddf-a070-c3320aa319ff" nodeName="node-5612d955772dd">
+       <variant sortingIndex="400" workspace="live" nodeType="Sfi.Encult:Answer" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:11:01+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:29:59+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:29:59+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">pravoslavie</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Православие</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">священник Дмитрий (Богоявленский)</authorName>
+         <authorTitle __type="string">игумен Русской Православной Церкви</authorTitle>
+         <quizText __type="string">Ростовщичество нарушает заповедь любви к ближнему тем, что во-первых, в корыстных целях использует его нужду, а во-вторых, под видом благодеяния его грабит и делает рабом ростовщика. В таком виде давать деньги под проценты недопустимо. Это область человеческих отношений. Однако естественно уточнить вопрос: допустимо ли держать сбережения в банке? Это уже не область человеческих отношений и здесь действуют другие законы. Допустимо, если помнить, что банк – не духовное учреждение. Но самым надёжным способом сохранить и приумножить свои сбережения является благотворительность.</quizText>
+         <fullVideo __type="string">141226525</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">4564967d-947b-348f-6365-80648879d037</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="a99a298b-13e3-d9a9-0e5f-8d6695ebd5b5" nodeName="node-5612d95cd4935">
+       <variant sortingIndex="450" workspace="live" nodeType="Sfi.Encult:Answer" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:11:08+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">ateizm</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Атеизм</title>
+        </properties>
+       </variant>
+      </node>
+     </node>
+     <node identifier="843d4540-f7b2-eb1b-cbec-0259baa2f836" nodeName="node-5612d89c3b23c">
+      <variant sortingIndex="288" workspace="live" nodeType="Sfi.Encult:Question" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:07:56+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">pokornost-sudbe</uriPathSegment>
+        <canonicalLink __type="string"></canonicalLink>
+        <title __type="string">Покорность судьбе</title>
+       </properties>
+      </variant>
+      <node identifier="011c758d-3533-1941-d6cb-c7e5ab639699" nodeName="node-5612d971b5474">
+       <variant sortingIndex="100" workspace="live" nodeType="Sfi.Encult:Answer" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:11:29+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:23:03+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:23:02+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">saentologiya</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Саентология</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Максим Рубцов</authorName>
+         <authorTitle __type="string">священник Саентологической церкви Москвы</authorTitle>
+         <quizText __type="string">Ни один человек, который молчаливо покоряется обстоятельствам не будет полезен: ни в материальной, ни в интеллектуальной, ни в духовной сферах жизни. Ответ  на этот вопрос прост – сделай так, чтобы барьеры к более счастливой жизни твоей и людей вокруг были преодолены и сокрушены. Не бывает непреодолимых проблем. Если духовное существо соглашается и покоряется обстоятельствам, оно теряет свою силу и духовную свободу и просто переходит из ранга  духовных существ в ранг рабов. Нету никаких причин, которые могли бы сломать человека на пути духовного совершенства, никаких «жизненных обстоятельств», которым нужно покоряться. Есть только те обстоятельства, которые само существо создаёт себе, чтобы самовольно уменьшить свою силу и использовать как оправдание, чтобы остановиться на пути самосовершенствования. Когда барьеров кажется слишком много – возьми в три раза больше: и это тест на способность быть, владеть и действовать, в том числе и в духовной области существования.</quizText>
+         <fullVideo __type="string">141280774</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">c999f81e-adcc-384c-f903-9a4c928794ad</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="fdf7a374-79fb-6323-eee2-d3f8be614dc7" nodeName="node-5612d97c91701">
+       <variant sortingIndex="150" workspace="live" nodeType="Sfi.Encult:Answer" version="5" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:11:40+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:57:40+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:57:39+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">buddizm</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Буддизм</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Александр Шаукатович Койбагаров</authorName>
+         <authorTitle __type="string">президент Российской Ассоциации буддистов Алмазного пути традиции Карма Кагью</authorTitle>
+         <quizText __type="string">Человек обладает силой и свободой выбора, он волен решать, что ему делать сегодня и в будущем. Какое ты сделаешь себе сегодня, такое у тебя будет завтра. Если есть обстоятельство и его можно преодолеть, надо действовать, не думая, получится ли у тебя, надо просто делать то, что должен, а там будь, что будет. Если обстоятельство разрешить невозможно, то даже думать он нём не стоит. Твои действия будут похожи на рыбу, которая бьётся об лед. Лучше сохранить свои нервы в порядке и посвятить время любимым людям.</quizText>
+         <fullVideo __type="string">141311301</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">55c38588-514f-cdda-5832-b1dd3ea57aae</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="6e86d187-142c-594f-f729-27993efbdbd5" nodeName="node-5612d981eb87d">
+       <variant sortingIndex="200" workspace="live" nodeType="Sfi.Encult:Answer" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:11:45+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:34:15+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:34:15+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">telema</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Телема</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Олег Телемский</authorName>
+         <authorTitle __type="string">глава Ордена восточных тамплиеров России (телема)</authorTitle>
+         <quizText __type="string">Надо различать Судьбу и судьбу. Судьбе с большой буквы мы не можем противиться. Мы не знаем, на каком повороте Аннушка разлила масло и на какой крыше разместился кирпич. Это тот уровень Судьбы, который в любом случае остаётся вне ведения человека, что бы он ни делал. И это напоминает нам о том, что, помимо нашего я, есть ещё что-то высшее – самость, исток, первоначало. Но есть то, что человек изменить может. И если человек отказывается бороться с обстоятельствами, он не более чем раб. Свободный до последнего отстаивает себя и свою Волю перед слепыми силами бытия. И в этом его суть и судьба свободного.</quizText>
+         <fullVideo __type="string">141272354</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">d05b6fb7-4d4b-ffaa-b29c-3fe90bbb8a78</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="806163b1-e6ed-f744-090e-4cc319c401dc" nodeName="node-5612d98baa291">
+       <variant sortingIndex="250" workspace="live" nodeType="Sfi.Encult:Answer" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:11:55+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:39:33+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:39:32+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">krishnaizm</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Кришнаизм</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Бхакти Вигьяна Госвами</authorName>
+         <authorTitle __type="string">президент Центра обществ сознания Кришны в России</authorTitle>
+         <quizText __type="string">Разумный человек отличается от неразумного тем, что понимает, какие из обстоятельств нужно принять как данность, а с какими бороться. Духовная задача человека – понять и добровольно принять волю Бога в своей жизни, и одни обстоятельства посылаются нам, чтобы мы приняли их с благодарностью, другие – чтобы мы боролись против них и стали сильнее и чище. Способность понимать волю Бога, проявляющуюся во внешних обстоятельствах, и есть истинная мудрость.</quizText>
+         <fullVideo __type="string">141283466</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">0058f273-592c-9110-7b88-766c2e17952c</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="6dddc6fb-cc4e-5e26-9229-5379000f784d" nodeName="node-5612d9918ce63">
+       <variant sortingIndex="300" workspace="live" nodeType="Sfi.Encult:Answer" version="5" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:12:01+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:13:24+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:13:24+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">islam</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Ислам</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Ильдар Хазрат Алибеков</authorName>
+         <authorTitle __type="string">преподаватель Московского исламского института</authorTitle>
+         <quizText __type="string">Венец творения Всевышнего – человек – обладает волей и свободой выбора, иначе жизнь, как и всё окружающее нас, потеряла бы всякий смысл. Есть вещи, которые предопределены свыше и которые человек не в состоянии поменять: природные явления, рождение человека на свет в той или иной семье и стране и т.д. Но что касается постоянного выбора человека в его жизни, он волен сам принимать его, и именно за этот выбор он отвечает перед Всевышним. Вокруг нас происходит постоянная смена декораций, обновление обстоятельств и событий, и нужно сделать свой выбор, сыграть свою роль.</quizText>
+         <fullVideo __type="string">141286540</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">131f94b4-b780-a7b6-598c-649f9ea78608</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="783a77a3-26d5-43f4-a4cf-caeda79679d2" nodeName="node-5612d9995e33e">
+       <variant sortingIndex="350" workspace="live" nodeType="Sfi.Encult:Answer" version="5" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:12:09+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:07:07+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:07:07+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">progressivnyj-iudaizm</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Прогрессивный иудаизм</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Леонид Бимбат</authorName>
+         <authorTitle __type="string">раввин Общины прогрессивного иудаизм Ле-Дор Ва-Дор</authorTitle>
+         <quizText __type="string">Творец мира предопределил многие обстоятельства человеческой жизни, и эта предопределённость выражается в социальном окружении человека, его происхождении, природных задатках. Всё это мы можем назвать судьбой. Но при этом у человека всегда есть свобода выбора, благодаря которой он может изменять последовательность событий своей жизни. Делая правильный выбор, угодный Творцу, соответствующий Его заповедям, человек может и даже должен изменять любые обстоятельства.</quizText>
+         <fullVideo __type="string">141257783</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">4afa362f-f066-60b8-3dc0-7d6a1d9134c6</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="0fa01b6b-366e-5c1b-f987-c1650ad5840f" nodeName="node-5612d9a1b0957">
+       <variant sortingIndex="400" workspace="live" nodeType="Sfi.Encult:Answer" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:12:17+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:31:35+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:31:35+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">pravoslavie</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Православие</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">священник Дмитрий (Богоявленский)</authorName>
+         <authorTitle __type="string">игумен Русской Православной Церкви</authorTitle>
+         <quizText __type="string">Пока человек не открыл для себя своего призвания, он будет или бороться со всеми обстоятельствами подряд, или безвольно им следовать. Но обретя своё призвание, смысл и цель жизни, откровение Любви и Свободы, он покорит в первую очередь самого себя, а не обстоятельства, в раболепии перед которыми он пребывает, и увидит, что появилось множество благоприятных обстоятельств, с которыми вовсе не нужно бороться.</quizText>
+         <fullVideo __type="string">141226529</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">4564967d-947b-348f-6365-80648879d037</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="4f06db42-f271-d962-277c-354751ed12b0" nodeName="node-5612d9a8a3e7c">
+       <variant sortingIndex="450" workspace="live" nodeType="Sfi.Encult:Answer" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:12:24+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">ateizm</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Атеизм</title>
+        </properties>
+       </variant>
+      </node>
+     </node>
+     <node identifier="b0929479-be97-6b74-06e2-9a133f934f31" nodeName="node-5612d8a65b32a">
+      <variant sortingIndex="294" workspace="live" nodeType="Sfi.Encult:Question" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:08:06+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">istochnik-zla</uriPathSegment>
+        <canonicalLink __type="string"></canonicalLink>
+        <title __type="string">Источник зла</title>
+       </properties>
+      </variant>
+      <node identifier="2acfff41-42cf-9e51-217b-2c2f59827c59" nodeName="node-5612d9b7b6182">
+       <variant sortingIndex="100" workspace="live" nodeType="Sfi.Encult:Answer" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:12:39+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:26:23+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:26:23+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">saentologiya</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Саентология</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Максим Рубцов</authorName>
+         <authorTitle __type="string">священник Саентологической церкви Москвы</authorTitle>
+         <quizText __type="string">Изначальное зло – не Абсолют, изначальное зло – это накопившееся количество ошибок всех бессмертных духовных существ. Когда оно набирает критическую массу, зло становится видимо и может быть описано как таковое. Создатель этой вселенной не вносил в неё зла. Никто изначально не был «запрограммирован» на зло. Даже сами понятия Добро и Зло не являются Абсолютом. Сами духовные существа делают что-то себе или соглашаются, что другие могут сделать что-то им. Потом называют это Злом и делают зло в ответ другим.&lt;br/&gt;</quizText>
+         <fullVideo __type="string">141281170</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">c999f81e-adcc-384c-f903-9a4c928794ad</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="986e277b-3741-c476-bece-86ab574a6055" nodeName="node-5612d9c00a32a">
+       <variant sortingIndex="150" workspace="live" nodeType="Sfi.Encult:Answer" version="5" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:12:48+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:58:59+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:58:59+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">buddizm</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Буддизм</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Александр Шаукатович Койбагаров</authorName>
+         <authorTitle __type="string">президент Российской Ассоциации буддистов Алмазного пути традиции Карма Кагью</authorTitle>
+         <quizText __type="string">В мире происходит много хорошего и плохого. Нет абсолютного зла, нет абсолютного добра. Человеку дан разум, он сам выбирает куда применить его, а добро и зло относительно. Животные убивают, чтобы прокормиться, человек же осознанно делает выбор, убивать ему живых существ, чтобы прокормиться, или нет. Он может убить животное, чтобы прокормить своих детей, но при этом думать о животных, как не нарушить баланс между их смертностью и рождаемостью, контролировать их естественный прирост. Он может вообще обходиться без употребления мяса, если есть условия для нормальной жизни. Может просто убивать животных ради забавы. Первопричина зла – это отсутствие сострадания людей к окружающему их миру и слабость противостоять своим желаниям. Если у человека абсолютно нет сострадания, он будет утолять свою жажду, которая будет только расти, тем самым причиняя зло всем вокруг. Желание и отсутствие сострадания – вот что приносит зло в мир.</quizText>
+         <fullVideo __type="string">141311911</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">55c38588-514f-cdda-5832-b1dd3ea57aae</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="265ef011-7019-64f8-eebe-367f96251a74" nodeName="node-5612d9c8c4793">
+       <variant sortingIndex="200" workspace="live" nodeType="Sfi.Encult:Answer" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:12:56+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:38:49+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:38:48+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">telema</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Телема</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Олег Телемский</authorName>
+         <authorTitle __type="string">глава Ордена восточных тамплиеров России (телема)</authorTitle>
+         <quizText __type="string">Всякое зло относительно. Одно и то же явление кому-то покажется чудовищным злом, а кому-то естественным явлением. Источником зла является неведение человеком своей природы. Человек благословен, если понимает, что делает, и проклят, если не понимает. Человек, которому недостаёт осознанности, вот причина всякого зла, и прежде всего того зла, которое он приносит самому себе.</quizText>
+         <fullVideo __type="string">141272350</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">d05b6fb7-4d4b-ffaa-b29c-3fe90bbb8a78</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="01cd8801-814a-40bd-4005-2cea7529608c" nodeName="node-5612d9e44b470">
+       <variant sortingIndex="250" workspace="live" nodeType="Sfi.Encult:Answer" version="5" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:13:24+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:07:07+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:07:07+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">progressivnyj-iudaizm</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Прогрессивный иудаизм</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Леонид Бимбат</authorName>
+         <authorTitle __type="string">раввин Общины прогрессивного иудаизм Ле-Дор Ва-Дор</authorTitle>
+         <quizText __type="string">Зло связано только с человеком, с его отношением к миру и его действиями. Самый простой пример: дождь – это хорошо или плохо? Для человека, который вышел из дома без зонтика это безусловно плохо, а для крестьянина в засушливое лето это великое благо. В восприятии того или иного явления важна правильная точка зрения. Многие явления в мире (например, природные катаклизмы) не могут быть определены как зло. Но есть зло, которое люди совершают по отношению друг к другу и самим себе. Источник этого зла – непослушание Творцу мира, Его заповедям. Хотя и самые ужасные плоды человеческих злодеяний могут быть обращены Богом во благо и вести к совершенствованию человечества.</quizText>
+         <fullVideo __type="string">141259253</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">4afa362f-f066-60b8-3dc0-7d6a1d9134c6</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="64228c3a-01df-38cc-8955-7950ef28c0de" nodeName="node-5612d9f02e2d8">
+       <variant sortingIndex="300" workspace="live" nodeType="Sfi.Encult:Answer" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:13:36+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:36:15+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:36:14+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">pravoslavie</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Православие</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">священник Дмитрий (Богоявленский)</authorName>
+         <authorTitle __type="string">игумен Русской Православной Церкви</authorTitle>
+         <quizText __type="string">Первопричина зла в мире в отпадении людей от Бога и, как следствие, их
+смертность и страх, которых изначально не было. В результате каждый человек
+стремится выжить, но не зная того, что есть допустимые способы и недопустимые,
+и пользуясь последними, совершает очередной грех. Совершённый грех углубляет
+пропасть между человеком и Богом. Получается замкнутый круг. Круг этот
+размыкается Божьей победой над смертью в воскресении Богочеловека.</quizText>
+         <fullVideo __type="string"></fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">4564967d-947b-348f-6365-80648879d037</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="b2b0e34d-23b9-7470-aec9-a75b51860306" nodeName="node-5612d9fcc6e85">
+       <variant sortingIndex="350" workspace="live" nodeType="Sfi.Encult:Answer" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:13:48+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:40:16+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:40:16+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">krishnaizm</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Кришнаизм</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Бхакти Вигьяна Госвами</authorName>
+         <authorTitle __type="string">президент Центра обществ сознания Кришны в России</authorTitle>
+         <quizText __type="string">Источником зла в этом мире является изначальное невежество живого существа, порождающее в нём равнодушие к Богу. Подобно тому, как темнота – это отсутствие света, зло проявляется в том сердце, где отсутствует связь с изначальным источником тепла, любви и добра – Богом. Вода в реке, бегущей к океану, как правило, чиста, но та же вода в маленькой, стоячей луже становится рассадником болезнетворных микробов. Точно так же сердце человека, стремящегося в Богу, как правило, остаётся чистым, а в сердце, отгородившемся от Бога, начинают заводиться микробы зла. Зло – это болезнь человека, отвернувшегося от Бога, отделившего себя от Него. Чтобы излечиться от этой болезни, нужно снова повернуться к Богу.</quizText>
+         <fullVideo __type="string">141284248</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">0058f273-592c-9110-7b88-766c2e17952c</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="066f2236-a505-668a-7185-3405a567695e" nodeName="node-5612da0555aec">
+       <variant sortingIndex="400" workspace="live" nodeType="Sfi.Encult:Answer" version="5" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:13:57+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T21:14:23+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T21:14:23+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">islam</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Ислам</title>
+         <titleOverride __type="string"></titleOverride>
+         <metaDescription __type="string"></metaDescription>
+         <metaKeywords __type="string"></metaKeywords>
+         <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+         <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+         <twitterCardType __type="string"></twitterCardType>
+         <twitterCardCreator __type="string"></twitterCardCreator>
+         <twitterCardTitle __type="string"></twitterCardTitle>
+         <twitterCardDescription __type="string"></twitterCardDescription>
+         <twitterCardImage __type="string"></twitterCardImage>
+         <openGraphType __type="string"></openGraphType>
+         <openGraphTitle __type="string"></openGraphTitle>
+         <openGraphDescription __type="string"></openGraphDescription>
+         <openGraphImage __type="string"></openGraphImage>
+         <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+         <xmlSitemapPriority __type="string"></xmlSitemapPriority>
+         <authorName __type="string">Ильдар Хазрат Алибеков</authorName>
+         <authorTitle __type="string">преподаватель Московского исламского института</authorTitle>
+         <quizText __type="string">Всевышний сотворил мир в разнообразии, где есть место белому и чёрному, добру и злу, добродетели и греху. Если бы не было зла, человек не смог бы определить рамки добродетели. Согласно Писанию, человек сотворен Всевышним для определённой цели – поклонения Творцу и испытания. Поклонение проявляется не только в религиозных ритуалах и атрибутах, но во всей жизни человека: в его взаимоотношениях с людьми, родными, коллегами, его отношении ко всему происходящему с ним и вокруг него. Испытанием же является абсолютно всё: как бедность, так и богатство, как болезни, так и здоровье. Источник зла кроется в потаённых чувствах самого человека – его эгоизме, желании превосходства, алчности. Сатана же лишь нашептывает зло человеку и приукрашает для него греховное.</quizText>
+         <fullVideo __type="string">141286846</fullVideo>
+         <fullText __type="string"></fullText>
+         <votesCount __type="integer">0</votesCount>
+         <worldview __type="string">131f94b4-b780-a7b6-598c-649f9ea78608</worldview>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="17bd7776-fd30-0ce3-0542-a53c80570b52" nodeName="node-5612da152edd3">
+       <variant sortingIndex="450" workspace="live" nodeType="Sfi.Encult:Answer" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:14:13+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+        <properties>
+         <uriPathSegment __type="string">ateizm</uriPathSegment>
+         <canonicalLink __type="string"></canonicalLink>
+         <title __type="string">Атеизм</title>
+        </properties>
+       </variant>
+      </node>
+     </node>
+    </node>
+    <node identifier="f7100f4c-b21b-be83-d9f6-0cd0f9b5c7d4" nodeName="node-55afb944356ae">
+     <variant sortingIndex="175" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="5" removed="" hidden="" hiddenInIndex="1">
+      <dimensions/>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2015-07-22T15:39:58+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-10-01T13:16:01+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-01T13:16:01+00:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">mirovozzreniya</uriPathSegment>
+       <title __type="string">Мировоззрения</title>
+       <canonicalLink __type="string"></canonicalLink>
+      </properties>
+     </variant>
+     <node identifier="7c0c5a4d-ace4-7110-33a1-a7e01c5edf2c" nodeName="main">
+      <variant sortingIndex="900" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-10-01T13:15:55+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:01:36+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-01T13:16:01+00:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+     </node>
      <node identifier="55c38588-514f-cdda-5832-b1dd3ea57aae" nodeName="node-55bf4f4c6ebff">
-      <variant sortingIndex="150" workspace="live" nodeType="Sfi.Encult:Worldview" version="3" removed="" hidden="" hiddenInIndex="">
+      <variant sortingIndex="200" workspace="live" nodeType="Sfi.Encult:Worldview" version="4" removed="" hidden="" hiddenInIndex="">
        <dimensions/>
        <accessRoles __type="array"/>
        <creationDateTime __type="object" __classname="DateTime">2015-08-03T11:23:56+00:00</creationDateTime>
-       <lastModificationDateTime __type="object" __classname="DateTime">2015-08-03T11:24:07+00:00</lastModificationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:01:36+00:00</lastModificationDateTime>
        <lastPublicationDateTime __type="object" __classname="DateTime">2015-08-03T11:24:07+00:00</lastPublicationDateTime>
        <properties>
         <uriPathSegment __type="string">buddizm</uriPathSegment>
@@ -251,18 +1578,202 @@
        </variant>
       </node>
      </node>
+     <node identifier="c999f81e-adcc-384c-f903-9a4c928794ad" nodeName="node-5612d6d4539b2">
+      <variant sortingIndex="300" workspace="live" nodeType="Sfi.Encult:Worldview" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:00:20+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">saentologiya</uriPathSegment>
+        <canonicalLink __type="string"></canonicalLink>
+        <title __type="string">Саентология</title>
+       </properties>
+      </variant>
+      <node identifier="2cbb944a-0a06-a4d9-c7dc-da4eb12fd105" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:00:20+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+      </node>
+     </node>
+     <node identifier="d05b6fb7-4d4b-ffaa-b29c-3fe90bbb8a78" nodeName="node-5612d6dbc37ff">
+      <variant sortingIndex="400" workspace="live" nodeType="Sfi.Encult:Worldview" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:00:27+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">telema</uriPathSegment>
+        <canonicalLink __type="string"></canonicalLink>
+        <title __type="string">Телема</title>
+       </properties>
+      </variant>
+      <node identifier="3a308db8-8392-2af1-044d-e6619c3b2480" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:00:27+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+      </node>
+     </node>
+     <node identifier="0058f273-592c-9110-7b88-766c2e17952c" nodeName="node-5612d6e99c43e">
+      <variant sortingIndex="500" workspace="live" nodeType="Sfi.Encult:Worldview" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:00:41+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">krishnaizm</uriPathSegment>
+        <canonicalLink __type="string"></canonicalLink>
+        <title __type="string">Кришнаизм</title>
+       </properties>
+      </variant>
+      <node identifier="25895a01-73b9-cd0c-bff4-b85f979bf7a1" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:00:41+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+      </node>
+     </node>
+     <node identifier="131f94b4-b780-a7b6-598c-649f9ea78608" nodeName="node-5612d6f756c89">
+      <variant sortingIndex="600" workspace="live" nodeType="Sfi.Encult:Worldview" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:00:55+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">islam</uriPathSegment>
+        <canonicalLink __type="string"></canonicalLink>
+        <title __type="string">Ислам</title>
+       </properties>
+      </variant>
+      <node identifier="8c320504-f635-7743-d8e5-7c2689d92719" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:00:55+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+      </node>
+     </node>
+     <node identifier="4afa362f-f066-60b8-3dc0-7d6a1d9134c6" nodeName="node-5612d70689aed">
+      <variant sortingIndex="700" workspace="live" nodeType="Sfi.Encult:Worldview" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:01:10+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">progressivnyj-iudaizm</uriPathSegment>
+        <canonicalLink __type="string"></canonicalLink>
+        <title __type="string">Прогрессивный иудаизм</title>
+       </properties>
+      </variant>
+      <node identifier="27a5ef45-b82c-7e8b-e1ea-13ee767b6e3e" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:01:10+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+      </node>
+     </node>
+     <node identifier="4564967d-947b-348f-6365-80648879d037" nodeName="node-5612d71095d82">
+      <variant sortingIndex="800" workspace="live" nodeType="Sfi.Encult:Worldview" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:01:20+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">pravoslavie</uriPathSegment>
+        <canonicalLink __type="string"></canonicalLink>
+        <title __type="string">Православие</title>
+       </properties>
+      </variant>
+      <node identifier="f1e16a7a-3fbe-8b1f-f316-9ee7a45e1b00" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:01:20+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+      </node>
+     </node>
+     <node identifier="dde4c016-6bc9-52d7-6dc8-2b16d84876f3" nodeName="node-5612d71fcc310">
+      <variant sortingIndex="850" workspace="live" nodeType="Sfi.Encult:Worldview" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions/>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:01:35+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+       <properties>
+        <uriPathSegment __type="string">ateizm</uriPathSegment>
+        <canonicalLink __type="string"></canonicalLink>
+        <title __type="string">Атеизм</title>
+       </properties>
+      </variant>
+      <node identifier="4d57aaa7-4483-db47-4c54-be03dc247e9d" nodeName="main">
+       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos:ContentCollection" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-10-05T20:01:35+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:23+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-10-05T20:19:21+00:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+      </node>
+     </node>
     </node>
     <node identifier="39885d83-baaa-3dda-8b3a-7ecada2ac577" nodeName="node-55afbbb6f2280">
-     <variant sortingIndex="250" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="3" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="250" workspace="live" nodeType="Sfi.Encult:PageSection" version="4" removed="" hidden="" hiddenInIndex="">
       <dimensions/>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-07-22T15:50:15+00:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T15:59:33+00:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-22T15:59:33+00:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-08-06T14:10:20+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2015-08-06T14:10:20+00:00</lastPublicationDateTime>
       <properties>
        <uriPathSegment __type="string">o-proekte</uriPathSegment>
        <canonicalLink __type="string"></canonicalLink>
        <title __type="string">О проекте</title>
+       <titleOverride __type="string"></titleOverride>
+       <metaDescription __type="string"></metaDescription>
+       <metaKeywords __type="string"></metaKeywords>
+       <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+       <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+       <twitterCardType __type="string"></twitterCardType>
+       <twitterCardCreator __type="string"></twitterCardCreator>
+       <twitterCardTitle __type="string"></twitterCardTitle>
+       <twitterCardDescription __type="string"></twitterCardDescription>
+       <twitterCardImage __type="string"></twitterCardImage>
+       <openGraphType __type="string"></openGraphType>
+       <openGraphTitle __type="string"></openGraphTitle>
+       <openGraphDescription __type="string"></openGraphDescription>
+       <openGraphImage __type="string"></openGraphImage>
+       <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+       <xmlSitemapPriority __type="string"></xmlSitemapPriority>
       </properties>
      </variant>
      <node identifier="00d12bfd-9064-9129-3795-063c21f6615b" nodeName="main">
@@ -274,19 +1785,107 @@
        <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-22T15:59:33+00:00</lastPublicationDateTime>
        <properties/>
       </variant>
+      <node identifier="02ea137a-277d-75e4-e6e2-fe056170fbfe" nodeName="node-55c36b9d25418">
+       <variant sortingIndex="100" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-08-06T14:13:49+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-08-06T14:24:19+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-08-06T14:24:19+00:00</lastPublicationDateTime>
+        <properties>
+         <title __type="string">&lt;h2&gt;Как это работает&lt;/h2&gt;</title>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="171160ee-6dcd-b980-5ca6-16f06e2207ea" nodeName="node-55c36d1870e33">
+       <variant sortingIndex="150" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="6" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-08-06T14:20:08+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-08-06T14:24:19+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-08-06T14:24:19+00:00</lastPublicationDateTime>
+        <properties>
+         <title __type="string">&lt;h2&gt;Идеология проекта&lt;/h2&gt;</title>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="2594c819-5318-46d8-adfa-1e72eaea64bb" nodeName="node-55c36d366d233">
+       <variant sortingIndex="200" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Headline" version="7" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-08-06T14:20:38+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-08-06T14:24:19+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-08-06T14:24:19+00:00</lastPublicationDateTime>
+        <properties>
+         <title __type="string">&lt;h2&gt;Команда&lt;/h2&gt;</title>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="cc1d4dad-13c0-5adf-1018-12dfeefedfae" nodeName="node-55c36d83ef99c">
+       <variant sortingIndex="225" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="14" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-08-06T14:21:55+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-08-06T14:24:19+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-08-06T14:24:19+00:00</lastPublicationDateTime>
+        <properties>
+         <text __type="string">&lt;p&gt;&lt;em&gt;Автор идеи&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Тихонравов Юрий Владимирович, кандидат философских наук, директор Центра изучения и развития межкультурных отношений.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Координатор проекта&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Щербак Сергей Викторович, религиовед, культуролог, преподаватель, автор исследований по вопросам современной религиозности.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Консультанты проекта&lt;/em&gt;&lt;/p&gt;&lt;p&gt;Иваненко Сергей Игоревич, российский религиовед, доктор философских наук, автор многочисленных монографий и публикаций по религиоведению.&lt;br/&gt;Пчелинцев Анатолий Васильевич, российский правовед, доктор юридических наук, профессор, главный редактор журнала «Религия и право».&lt;br/&gt;Себенцов Андрей Евгеньевич, российский религиовед, кандидат философских наук, действительный государственный советник Российской Федерации первого класса.&lt;/p&gt;</text>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="e894778f-0251-96ad-3e50-d2fdd297a782" nodeName="node-55c36ddc12d08">
+       <variant sortingIndex="175" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="5" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-08-06T14:23:24+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-08-06T14:24:19+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-08-06T14:24:19+00:00</lastPublicationDateTime>
+        <properties>
+         <text __type="string">&lt;p&gt;«Мониторинг мировоззрений» является идеологически нейтральным проектом. Он не ассоциируется ни с одним духовным или идеологическим движением, не ангажирован им и не контролируется им.&lt;br/&gt;&lt;/p&gt;</text>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="b2b90059-4bff-fa8f-5742-37c0d6039865" nodeName="node-55c36de9c7a8c">
+       <variant sortingIndex="125" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Text" version="5" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-08-06T14:23:37+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-08-06T14:24:19+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-08-06T14:24:19+00:00</lastPublicationDateTime>
+        <properties>
+         <text __type="string">&lt;p&gt;Аутентичные представители различных духовных движений коротко отвечают на жизненно важные вопросы, раскрывая специфику своих взглядов на мир.&lt;br/&gt;Вы выбираете ответ &lt;strong&gt;вслепую&lt;/strong&gt;, не зная, к какому именно мировоззрению, движению, течению относится его автор. Только сделав выбор, вы узнаёте, что вы выбрали.&lt;br/&gt;&lt;/p&gt;</text>
+        </properties>
+       </variant>
+      </node>
      </node>
     </node>
     <node identifier="8137ebf2-768d-d4c4-413b-46e82cf5cb66" nodeName="node-55afbbc662fc8">
-     <variant sortingIndex="300" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="3" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="300" workspace="live" nodeType="Sfi.Encult:PageSection" version="5" removed="" hidden="1" hiddenInIndex="">
       <dimensions/>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-07-22T15:50:30+00:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T15:59:33+00:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-22T15:59:33+00:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-08-13T07:46:28+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2015-08-13T07:46:28+00:00</lastPublicationDateTime>
       <properties>
        <uriPathSegment __type="string">statistika</uriPathSegment>
        <canonicalLink __type="string"></canonicalLink>
        <title __type="string">Статистика</title>
+       <titleOverride __type="string"></titleOverride>
+       <metaDescription __type="string"></metaDescription>
+       <metaKeywords __type="string"></metaKeywords>
+       <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+       <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+       <twitterCardType __type="string"></twitterCardType>
+       <twitterCardCreator __type="string"></twitterCardCreator>
+       <twitterCardTitle __type="string"></twitterCardTitle>
+       <twitterCardDescription __type="string"></twitterCardDescription>
+       <twitterCardImage __type="string"></twitterCardImage>
+       <openGraphType __type="string"></openGraphType>
+       <openGraphTitle __type="string"></openGraphTitle>
+       <openGraphDescription __type="string"></openGraphDescription>
+       <openGraphImage __type="string"></openGraphImage>
+       <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+       <xmlSitemapPriority __type="string"></xmlSitemapPriority>
       </properties>
      </variant>
      <node identifier="e25cf864-7bcb-d7c7-b2f7-4110d5070ca3" nodeName="main">
@@ -298,19 +1897,45 @@
        <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-22T15:59:33+00:00</lastPublicationDateTime>
        <properties/>
       </variant>
+      <node identifier="1e04f17f-3345-192d-c115-dcfe4bd6a8ee" nodeName="node-55c37a59902b5">
+       <variant sortingIndex="100" workspace="live" nodeType="Sfi.Encult:StatsPlugin" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions/>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2015-08-06T15:16:41+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2015-08-06T15:29:25+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2015-08-06T15:29:25+00:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+      </node>
      </node>
     </node>
     <node identifier="493acc5d-a478-7dec-71d1-60da1b9c230a" nodeName="node-55afbbd405f7e">
-     <variant sortingIndex="350" workspace="live" nodeType="TYPO3.Neos.NodeTypes:Page" version="3" removed="" hidden="" hiddenInIndex="">
+     <variant sortingIndex="350" workspace="live" nodeType="Sfi.Encult:PageSection" version="4" removed="" hidden="" hiddenInIndex="">
       <dimensions/>
       <accessRoles __type="array"/>
       <creationDateTime __type="object" __classname="DateTime">2015-07-22T15:50:44+00:00</creationDateTime>
-      <lastModificationDateTime __type="object" __classname="DateTime">2015-07-22T15:59:33+00:00</lastModificationDateTime>
-      <lastPublicationDateTime __type="object" __classname="DateTime">2015-07-22T15:59:33+00:00</lastPublicationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2015-08-06T14:10:20+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2015-08-06T14:10:20+00:00</lastPublicationDateTime>
       <properties>
        <uriPathSegment __type="string">analitika</uriPathSegment>
        <canonicalLink __type="string"></canonicalLink>
        <title __type="string">Аналитика</title>
+       <titleOverride __type="string"></titleOverride>
+       <metaDescription __type="string"></metaDescription>
+       <metaKeywords __type="string"></metaKeywords>
+       <metaRobotsNoindex __type="boolean"></metaRobotsNoindex>
+       <metaRobotsNofollow __type="boolean"></metaRobotsNofollow>
+       <twitterCardType __type="string"></twitterCardType>
+       <twitterCardCreator __type="string"></twitterCardCreator>
+       <twitterCardTitle __type="string"></twitterCardTitle>
+       <twitterCardDescription __type="string"></twitterCardDescription>
+       <twitterCardImage __type="string"></twitterCardImage>
+       <openGraphType __type="string"></openGraphType>
+       <openGraphTitle __type="string"></openGraphTitle>
+       <openGraphDescription __type="string"></openGraphDescription>
+       <openGraphImage __type="string"></openGraphImage>
+       <xmlSitemapChangeFrequency __type="string"></xmlSitemapChangeFrequency>
+       <xmlSitemapPriority __type="string"></xmlSitemapPriority>
       </properties>
      </variant>
      <node identifier="086601c2-376f-32a3-53c7-32f73b984a9e" nodeName="main">
