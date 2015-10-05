@@ -53,11 +53,15 @@ class VoteController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 
 		$answerNode = $this->liveContext->getNodeByIdentifier($answerIdentifier);
 		$questionIdentifier = $answerNode->getparent()->getIdentifier();
+		$questionPath = $answerNode->getparent()->getProperty('uriPathSegment');
 		$worldviewIdentifier = $answerNode->getProperty('worldview')->getIdentifier();
 
-		$voteCookieId = 'vote_in_' . $questionIdentifier;
+		$voteCookieId = 'vote_in_' . $questionPath;
 		if ($httpRequest->hasCookie($voteCookieId)) {
-			throw new \Exception('You have already voted for this question!', 1427315962);
+			$error = Array();
+			$error['data']['success'] = false;
+			$error['error'] = 'You have already voted for this question!';
+			return json_encode($error);
 		}
 		// Set Answer id as a value of a cookie, to be used in frontend
 		$voteCookie = new Cookie($voteCookieId, $answerIdentifier, 0, 72000);
@@ -88,7 +92,9 @@ class VoteController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 		// Save the vote (for statistics and logging)
 		$this->voteRepository->add($vote);
 
-		return "Success";
+		$result = Array();
+		$result['data']['success'] = true;
+		return json_encode($result);
 	}
 
 	/*

@@ -87,6 +87,7 @@ prototype(Sfi.Encult:Question) < prototype(TYPO3.TypoScript:Template) {
 		itemName = 'node'
 		iterationName = 'iterator'
 	}
+	@process.contentElementWrapping = TYPO3.Neos:ContentElementWrapping
 }
 
 
