@@ -1,0 +1,18 @@
+-
+  name: 'Encult'
+  uriPattern: '<SfiSubRoutes>'
+  subRoutes:
+        'SfiSubRoutes':
+          package: 'Sfi.Encult'
+
+##
+# TYPO3 Neos subroutes
+
+-
+  name: 'TYPO3Neos'
+  uriPattern: '<TYPO3NeosSubroutes>'
+  subRoutes:
+    'TYPO3NeosSubroutes':
+      package: 'TYPO3.Neos'
+      variables:
+        'defaultUriSuffix': '.html'
