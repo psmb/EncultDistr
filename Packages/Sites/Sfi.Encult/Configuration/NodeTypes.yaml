@@ -64,6 +64,8 @@
   properties:
     title:
       type: string
+      validation:
+        'TYPO3.Neos/Validation/NotEmptyValidator': []
       ui:
         inlineEditable: true
         aloha:
@@ -88,6 +90,8 @@
   properties:
     worldview:
       type: reference
+      validation:
+        'TYPO3.Neos/Validation/NotEmptyValidator': []
       ui:
         label: 'Мировоззрение'
         reloadIfChanged: TRUE
@@ -117,7 +121,18 @@
     fullVideo:
       type: string
       ui:
-        label: 'Ссылка на видео (после голосования)'
+        label: 'Идентификатор видео Vimeo'
+        inspector:
+          group: 'general'
+      validation:
+        'TYPO3.Neos/Validation/NotEmptyValidator': []
+        'TYPO3.Neos/Validation/StringLengthValidator':
+          minimum: 9
+          maximum: 9
+    fullVideoThumb:
+      type: string
+      ui:
+        label: 'Ссылка на миниатюру видео'
         inspector:
           group: 'general'
     fullText:
@@ -126,5 +141,5 @@
         inlineEditable: true
         aloha:
           placeholder: 'Расшифровка видео (после голосования)'
-    votesCount:
+    voteCount:
       type: integer

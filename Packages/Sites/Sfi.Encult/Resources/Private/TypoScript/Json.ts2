@@ -36,7 +36,7 @@ prototype(Sfi.Encult:WorldviewsJson) < prototype(Sfi.Encult:JsonPage) {
 
 prototype(Sfi.Encult:WorldviewJson) < prototype(Sfi.Encult:Json) {
 	id = ${q(node).property('uriPathSegment')}
-	title = ${q(node).property('title')}
+	title = ${String.stripTags(q(node).property('title'))}
 	@process.1 = ${'"' + this.id + '": ' + value}
 	@process.2 = ${iterator.isLast ? value : value + ','}
 }
@@ -56,8 +56,8 @@ prototype(Sfi.Encult:QuestionsJson) < prototype(Sfi.Encult:JsonPage) {
 
 prototype(Sfi.Encult:QuestionJson) < prototype(Sfi.Encult:Json) {
 	id = ${q(node).property('uriPathSegment')}
-	title = ${q(node).property('title')}
-	subTitle = ${q(node).property('subTitle')}
+	title = ${String.stripTags(q(node).property('title'))}
+	subTitle = ${String.stripTags(q(node).property('subTitle'))}
 	@process.1 = ${'"' + this.id + '": ' + value}
 	@process.2 = ${iterator.isLast ? value : value + ','}
 }
@@ -80,12 +80,13 @@ prototype(Sfi.Encult:AnswersJson) < prototype(Sfi.Encult:JsonPage) {
 
 prototype(Sfi.Encult:AnswerJson) < prototype(Sfi.Encult:Json) {
 	id = ${node.identifier}
-	authorName = ${q(node).property('authorName')}
-	authorTitle = ${q(node).property('authorTitle')}
-	quizText = ${q(node).property('quizText')}
+	authorName = ${String.stripTags(q(node).property('authorName'))}
+	authorTitle = ${String.stripTags(q(node).property('authorTitle'))}
+	quizText = ${String.stripTags(q(node).property('quizText'))}
 	fullVideo = ${q(node).property('fullVideo')}
-	fullText = ${q(node).property('fullText')}
-	votesCount = ${q(node).property('votesCount')}
+	fullVideoThumb = ${q(node).property('fullVideoThumb')}
+	fullText = ${String.stripTags(q(node).property('fullText'))}
+	voteCount = ${q(node).property('voteCount')}
 	worldviewId = ${q(node).property('worldview').properties.uriPathSegment}
 	@process.1 = ${iterator.isLast ? value : value + ','}
 }
