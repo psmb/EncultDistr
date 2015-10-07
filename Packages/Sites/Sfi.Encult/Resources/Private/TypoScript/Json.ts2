@@ -32,6 +32,12 @@ prototype(Sfi.Encult:WorldviewsJson) < prototype(Sfi.Encult:JsonPage) {
 		iterationName = 'iterator'
 	}
 	content.@process.1 = ${'{' + value + '}'}
+	@cache {
+		mode = 'cached'
+		entryTags {
+			1 = ${'DescendantOf_' + node.identifier}
+		}
+	}
 }
 
 prototype(Sfi.Encult:WorldviewJson) < prototype(Sfi.Encult:Json) {
@@ -52,6 +58,12 @@ prototype(Sfi.Encult:QuestionsJson) < prototype(Sfi.Encult:JsonPage) {
 		iterationName = 'iterator'
 	}
 	content.@process.1 = ${'{' + value + '}'}
+	@cache {
+		mode = 'cached'
+		entryTags {
+			1 = ${'DescendantOf_' + node.identifier}
+		}
+	}
 }
 
 prototype(Sfi.Encult:QuestionJson) < prototype(Sfi.Encult:Json) {
@@ -76,6 +88,12 @@ prototype(Sfi.Encult:AnswersJson) < prototype(Sfi.Encult:JsonPage) {
 		iterationName = 'iterator'
 	}
 	content.@process.1 = ${'[' + value + ']'}
+	@cache {
+		mode = 'cached'
+		entryTags {
+			1 = ${'DescendantOf_' + node.identifier}
+		}
+	}
 }
 
 prototype(Sfi.Encult:AnswerJson) < prototype(Sfi.Encult:Json) {
