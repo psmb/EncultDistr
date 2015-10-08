@@ -70,6 +70,10 @@ prototype(Sfi.Encult:QuestionJson) < prototype(Sfi.Encult:Json) {
 	id = ${q(node).property('uriPathSegment')}
 	title = ${String.stripTags(q(node).property('title'))}
 	subTitle = ${String.stripTags(q(node).property('subTitle'))}
+	totalVotes = ${String.toInteger(q(node).children('[instanceof Sfi.Encult:Answer]').reduce('previousValue + currentValue.properties.voteCount', 0))}
+	answerWithMaxVotesIndex = ${q(node).children('[instanceof Sfi.Encult:Answer]').reduce('array[previousValue].properties.voteCount < array[index].properties.voteCount ? index : previousValue', 0)}
+	answerWithMaxVotesCount = ${q(node).children('[instanceof Sfi.Encult:Answer]').get(this.answerWithMaxVotesIndex).properties.voteCount}
+	worldviewWithMaxVotesId = ${q(node).children('[instanceof Sfi.Encult:Answer]').get(this.answerWithMaxVotesIndex).properties.worldview.properties.uriPathSegment}
 	@process.1 = ${'"' + this.id + '": ' + value}
 	@process.2 = ${iterator.isLast ? value : value + ','}
 }
@@ -104,7 +108,7 @@ prototype(Sfi.Encult:AnswerJson) < prototype(Sfi.Encult:Json) {
 	fullVideo = ${q(node).property('fullVideo')}
 	fullVideoThumb = ${q(node).property('fullVideoThumb')}
 	fullText = ${String.stripTags(q(node).property('fullText'))}
-	voteCount = ${q(node).property('voteCount')}
+	voteCount = ${String.toInteger(q(node).property('voteCount'))}
 	worldviewId = ${q(node).property('worldview').properties.uriPathSegment}
 	@process.1 = ${iterator.isLast ? value : value + ','}
 }
