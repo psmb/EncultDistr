@@ -73,7 +73,7 @@ prototype(Sfi.Encult:QuestionJson) < prototype(Sfi.Encult:Json) {
 	totalVotes = ${String.toInteger(q(node).children('[instanceof Sfi.Encult:Answer]').reduce('previousValue + currentValue.properties.voteCount', 0))}
 	answerWithMaxVotesIndex = ${q(node).children('[instanceof Sfi.Encult:Answer]').reduce('array[previousValue].properties.voteCount < array[index].properties.voteCount ? index : previousValue', 0)}
 	answerWithMaxVotesCount = ${q(node).children('[instanceof Sfi.Encult:Answer]').get(this.answerWithMaxVotesIndex).properties.voteCount}
-	worldviewWithMaxVotesId = ${q(node).children('[instanceof Sfi.Encult:Answer]').get(this.answerWithMaxVotesIndex).properties.worldview.properties.uriPathSegment}
+	worldviewWithMaxVotes = ${q(node).children('[instanceof Sfi.Encult:Answer]').get(this.answerWithMaxVotesIndex).properties.worldview.properties.title}
 	@process.1 = ${'"' + this.id + '": ' + value}
 	@process.2 = ${iterator.isLast ? value : value + ','}
 }
