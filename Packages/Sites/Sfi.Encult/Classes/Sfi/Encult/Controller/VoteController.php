@@ -64,7 +64,7 @@ class VoteController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 			return json_encode($error);
 		}
 		// Set Answer id as a value of a cookie, to be used in frontend
-		$voteCookie = new Cookie($voteCookieId, $answerIdentifier, 0, 72000);
+		$voteCookie = new Cookie($voteCookieId, $answerIdentifier);
 		$response->setCookie($voteCookie);
 
 		if ($httpRequest->hasCookie('returning')) {
