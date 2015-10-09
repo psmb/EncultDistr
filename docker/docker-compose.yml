@@ -4,12 +4,17 @@ dbdata:
   volumes:
     - /var/lib/mysql
 
+node:
+  image: dimaip/encultn
+  ports:
+    - '80:80'
+
 redis:
   image: redis
   restart: always
 
 db:
-  image: million12/mariadb:latest
+  image: tutum/mariadb:latest
   ports:
     - 3306
   volumes_from:
@@ -22,28 +27,27 @@ webdata:
   image: busybox:latest
   command: echo webdata
   volumes:
-    - data:/data
-    - Persistent:/data/www/enculturation.dev/surf/shared/Data/Persistent
-    - /etc/localtime:/etc/localtime:ro
+    - /data
+    - ./Persistent:/data/www/izm.io/surf/shared/Data/Persistent
 
 web:
-  image: sfi/encultdistr:latest
+  image: dimaip/encultdistr:latest
   ports:
-    - '80'
+    - '8888:80'
   links:
     - db:db
     - redis
   volumes_from:
     - webdata
   environment:
-    VIRTUAL_HOST: 'enculturation.dev,dev.enculturation.dev,next.enculturation.dev'
-    T3APP_NAME: 'enculturation.dev'
+    VIRTUAL_HOST: 'izm.io,dev.izm.io,next.izm.io'
+    T3APP_NAME: 'izm.io'
   restart: always
 
 ssh:
   image: million12/php-app-ssh
   ports:
-    - '22'
+    - '1122:22'
   links:
     - db:db
     - redis
@@ -53,4 +57,3 @@ ssh:
   environment:
     IMPORT_GITHUB_PUB_KEYS: dimaip
   restart: always
-
