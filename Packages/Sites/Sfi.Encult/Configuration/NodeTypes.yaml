@@ -60,6 +60,10 @@
           group: 'general'
       validation:
         'TYPO3.Neos/Validation/NotEmptyValidator': []
+  constraints:
+    nodeTypes:
+      '*': false
+      'Sfi.Encult:Answer': true
 
 'Sfi.Encult:Answer':
   superTypes:
@@ -71,6 +75,9 @@
       groups:
         general:
           label: 'Ответ'
+  constraints:
+    nodeTypes:
+      '*': false
   properties:
     worldview:
       type: reference
@@ -117,7 +124,7 @@
     fullVideo:
       type: string
       ui:
-        label: 'Идентификатор видео Vimeo (9 цифр)'
+        label: 'Идентификатор видео Vimeo'
         reloadIfChanged: false
         inspector:
           group: 'general'
