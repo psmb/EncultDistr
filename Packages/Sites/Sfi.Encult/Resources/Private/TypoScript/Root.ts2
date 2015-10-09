@@ -1,50 +1,21 @@
 include: Json.ts2
 
 /**
- * Root TypoScript template for the Enculturation site
+ * This Neos installation does not use inline editing at all, so not much to see here
  */
 page = 'You shouldn't see this'
 
-#This is a default page object. It's being extended and never used directly.
 prototype(Sfi.Encult:Page) >
 prototype(Sfi.Encult:Page) < prototype(TYPO3.Neos:Page) {
 	head {
-		titleTag.content = ${String.stripTags(q(node).property('title')) + ' | enculturation.ru'}
-
 		stylesheets.site = TYPO3.TypoScript:Template {
-			templatePath = 'resource://Sfi.Encult/Private/Templates/SharedResources.html'
+			templatePath = 'resource://Sfi.Encult/Private/Templates/Page.html'
 			sectionName = 'stylesheets'
 		}
 	}
-	htmlTag.attributes.lang="ru"
-	bodyTag.attributes.class = 'Page'
-	bodyTag.attributes.id = ${'page-' + q(node).property('_name')}
 	body {
-		templatePath = 'resource://Sfi.Encult/Private/Templates/Pages/Page.html'
-		partialRootPath = 'resource://Sfi.Encult/Private/Partials'
-		layoutRootPath = 'resource://Sfi.Encult/Private/Layouts'
-
-		mainMenu = Menu {
-			entryLevel = 1
-			maximumLevels = 2
-		}
-
-		main = PrimaryContent {
-			renderByType {
-				condition = TRUE
-				type = ${q(documentNode).property('_nodeType.name')}
-			}
-		}
-
-		javascripts.bodyScripts = TYPO3.TypoScript:Template {
-			templatePath = 'resource://Sfi.Encult/Private/Templates/SharedResources.html'
-			sectionName = 'bodyScripts'
-		}
-		javascripts.analytics = TYPO3.TypoScript:Template {
-			templatePath = 'resource://Sfi.Encult/Private/Templates/SharedResources.html'
-			partialRootPath = 'resource://Sfi.Encult/Private/Partials'
-			sectionName = 'analytics'
-		}
+		templatePath = 'resource://Sfi.Encult/Private/Templates/Page.html'
+		sectionName = 'content'
 	}
 }
 
@@ -55,67 +26,3 @@ root.fallbackPage {
 }
 # Disable stupid layout mechanism
 root.layout>
-
-prototype(Sfi.Encult:PageMain) {
-	questions = TYPO3.TypoScript:Collection {
-		collection = ${q(node).children('node-55afb779f1131').children('[instanceof Sfi.Encult:Question]').get()}
-		itemRenderer = Sfi.Encult:QuestionShort
-		itemName = 'node'
-		iterationName = 'iterator'
-	}
-}
-
-prototype(Sfi.Encult:PageSection) {
-	main = TYPO3.Neos:PrimaryContent {
-		nodePath = 'main'
-	}
-}
-
-prototype(Sfi.Encult:Worldview) {
-	@process.contentElementWrapping = TYPO3.TypoScript:TemplateElementWrapping
-	main = ContentCollection {
-		nodePath = 'main'
-	}
-}
-
-prototype(Sfi.Encult:Question) < prototype(TYPO3.TypoScript:Template) {
-	node = ${node}
-	templatePath = 'resource://Sfi.Encult/Private/Templates/NodeTypes/Question.html'
-	answers = TYPO3.TypoScript:Collection {
-		collection = ${q(node).children('[instanceof Sfi.Encult:Answer]').get()}
-		itemRenderer = Sfi.Encult:Answer
-		itemName = 'node'
-		iterationName = 'iterator'
-	}
-	@process.contentElementWrapping = TYPO3.Neos:ContentElementWrapping
-}
-
-
-prototype(Sfi.Encult:QuestionShort) < prototype(TYPO3.TypoScript:Template) {
-	node = ${node}
-	templatePath = 'resource://Sfi.Encult/Private/Templates/NodeTypes/QuestionShort.html'
-	answerId = ${request.mainRequest.parentRequest.headers.cookies['vote_in_' + documentNode.identifier].value}
-}
-
-prototype(Sfi.Encult:Answer) {
-	node = ${node}
-	authorName = ${q(node).property('authorName')}
-	authorTitle = ${q(node).property('authorTitle')}
-	quizText = ${q(node).property('quizText')}
-	fullVideo = ${q(node).property('fullVideo')}
-	fullText = ${q(node).property('fullText')}
-	@process.contentElementWrapping = TYPO3.Neos:ContentElementWrapping
-}
-
-
-
-
-
-
-
-prototype(Sfi.Encult:StatsPlugin) < prototype(TYPO3.Neos:Plugin)
-prototype(Sfi.Encult:StatsPlugin) {
-	package = 'Sfi.Encult'
-	controller = 'Vote'
-	action = 'displayStats'
-}

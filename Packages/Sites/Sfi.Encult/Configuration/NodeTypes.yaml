@@ -6,36 +6,10 @@
     - 'TYPO3.Neos:Document'
 'Sfi.Encult:Page':
   ui:
-    label: 'XXXX'
+    label: 'Страница'
+    icon: icon-file-text
   superTypes:
     - 'Sfi.Encult:AbstractPage'
-'Sfi.Encult:PageSection':
-  ui:
-    label: 'Страница: Раздел'
-  superTypes:
-    - 'Sfi.Encult:AbstractPage'
-  childNodes:
-    main:
-      type: 'TYPO3.Neos:ContentCollection'
-'Sfi.Encult:PageMain':
-  ui:
-    label: 'Страница: Главная'
-  superTypes:
-    - 'Sfi.Encult:AbstractPage'
-
-
-
-
-
-'Sfi.Encult:StatsPlugin':
-  superTypes:
-    'TYPO3.Neos:Plugin': TRUE
-  ui:
-    label: 'Статистика голосования'
-    group: 'plugins'
-
-
-
 
 
 'Sfi.Encult:Worldview':
@@ -43,7 +17,11 @@
     - 'TYPO3.Neos:Document'
   ui:
     label: 'Мировоззрение'
-    icon: icon-file-text
+    icon: icon-moon
+    inspector:
+      groups:
+        general:
+          label: 'Мировоззрение'
   childNodes:
     main:
       type: 'TYPO3.Neos:ContentCollection'
@@ -51,38 +29,44 @@
     title:
       type: string
       ui:
-        inlineEditable: true
-        aloha:
-          placeholder: 'Название мировоззрения'
+        label: 'Название мировоззрения'
+        inspector:
+          group: 'general'
 
 'Sfi.Encult:Question':
   superTypes:
     - 'TYPO3.Neos:Document'
   ui:
     label: 'Вопрос'
-    icon: icon-file-text
+    icon: icon-question
+    inspector:
+      groups:
+        general:
+          label: 'Вопрос'
   properties:
     title:
       type: string
       validation:
         'TYPO3.Neos/Validation/NotEmptyValidator': []
       ui:
-        inlineEditable: true
-        aloha:
-          placeholder: 'Заголовок вопроса'
+        label: 'Заголовок вопроса'
+        inspector:
+          group: 'general'
     subTitle:
       type: string
       ui:
-        inlineEditable: true
-        aloha:
-          placeholder: 'Подзаголовок воспроса'
+        label: 'Подзаголовок воспроса'
+        inspector:
+          group: 'general'
+      validation:
+        'TYPO3.Neos/Validation/NotEmptyValidator': []
 
 'Sfi.Encult:Answer':
   superTypes:
     - 'TYPO3.Neos:Document'
   ui:
     label: 'Ответ'
-    icon: icon-file-text
+    icon: icon-reply
     inspector:
       groups:
         general:
@@ -94,34 +78,47 @@
         'TYPO3.Neos/Validation/NotEmptyValidator': []
       ui:
         label: 'Мировоззрение'
-        reloadIfChanged: TRUE
+        reloadIfChanged: false
         inspector:
           group: 'general'
-          position: '10'
           editorOptions:
             nodeTypes: ['Sfi.Encult:Worldview']
     authorName:
       type: string
       ui:
-        inlineEditable: true
-        aloha:
-          placeholder: 'Имя автора'
+        label: 'Имя отвечающего'
+        reloadIfChanged: false
+        inspector:
+          group: 'general'
+      validation:
+        'TYPO3.Neos/Validation/NotEmptyValidator': []
     authorTitle:
       type: string
       ui:
-        inlineEditable: true
-        aloha:
-          placeholder: 'Титул автора'
+        label: 'Титул отвечающего (с маленькой буквы)'
+        reloadIfChanged: false
+        inspector:
+          group: 'general'
+      validation:
+        'TYPO3.Neos/Validation/NotEmptyValidator': []
     quizText:
       type: string
       ui:
-        inlineEditable: true
-        aloha:
-          placeholder: 'Текст вопроса (до голосования)'
+        label: 'Текст ответа (до голосования)'
+        reloadIfChanged: false
+        inspector:
+          group: 'general'
+          editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
+          editorOptions:
+            rows: 15
+            required: TRUE
+      validation:
+        'TYPO3.Neos/Validation/NotEmptyValidator': []
     fullVideo:
       type: string
       ui:
-        label: 'Идентификатор видео Vimeo'
+        label: 'Идентификатор видео Vimeo (9 цифр)'
+        reloadIfChanged: false
         inspector:
           group: 'general'
       validation:
@@ -129,17 +126,25 @@
         'TYPO3.Neos/Validation/StringLengthValidator':
           minimum: 9
           maximum: 9
-    fullVideoThumb:
-      type: string
-      ui:
-        label: 'Ссылка на миниатюру видео'
-        inspector:
-          group: 'general'
     fullText:
       type: string
       ui:
-        inlineEditable: true
-        aloha:
-          placeholder: 'Расшифровка видео (после голосования)'
+        label: 'Расшифровка видео (после голосования)'
+        reloadIfChanged: false
+        inspector:
+          group: 'general'
+          editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
+          editorOptions:
+            rows: 15
+            required: TRUE
+    fullVideoThumb:
+      type: string
     voteCount:
       type: integer
+
+# 'Sfi.Encult:StatsPlugin':
+#   superTypes:
+#     'TYPO3.Neos:Plugin': TRUE
+#   ui:
+#     label: 'Статистика голосования'
+#     group: 'plugins'
