@@ -12,12 +12,9 @@
     },
     "require": {
         "typo3/neos": "2.0.x-dev",
-        "typo3/neos-nodetypes": "2.0.x-dev",
-        "typo3/neos-kickstarter": "2.0.x-dev",
 
         "doctrine/migrations": "@dev",
 
-        "typo3/neos-seo": "~1.0",
         "typo3/imagine": "~2.0",
         "typo3/form": "~2.0",
         "typo3/setup": "~2.0",
