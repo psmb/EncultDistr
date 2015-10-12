@@ -35,7 +35,7 @@ prototype(Sfi.Encult:WorldviewsJson) < prototype(Sfi.Encult:JsonPage) {
 	@cache {
 		mode = 'cached'
 		entryTags {
-			1 = ${'DescendantOf_' + node.identifier}
+			1 = ${'NodeType_Sfi.Encult:Answer'}
 		}
 	}
 }
