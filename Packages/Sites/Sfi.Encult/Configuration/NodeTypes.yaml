@@ -146,8 +146,6 @@
             required: TRUE
     fullVideoThumb:
       type: string
-    voteCount:
-      type: integer
 
 # 'Sfi.Encult:StatsPlugin':
 #   superTypes:
