@@ -1,0 +1,18 @@
+TYPO3:
+  TYPO3CR:
+    contentDimensions:
+     'language':
+       default: 'ru'
+       # The default preset to use if no URI segment was given when resolving languages in the router
+       defaultPreset: 'ru'
+       label: 'Language'
+       icon: 'icon-language'
+       presets:
+         'ru':
+           label: 'Russian'
+           values: ['ru']
+           uriSegment: 'ru'
+         'en':
+           label: 'English'
+           values: ['en', 'ru']
+           uriSegment: 'en'
