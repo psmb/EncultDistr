@@ -1,3 +1,47 @@
+# Define Aloha presets to reuse throughout the document
+blah: &alohaPlain
+  placeholder: 'Enter title here'
+  format:
+    b: false
+    i: false
+    u: false
+    sub: false
+    sup: false
+    p: false
+    h1: false
+    h2: false
+    h3: false
+    pre: false
+    removeFormat: false
+  table: {  }
+  list: {  }
+  link:
+    a: false
+  alignment: {  }
+
+blah: &alohaRich
+  placeholder: 'Enter title here'
+  format:
+    b: true
+    i: true
+    u: false
+    sub: true
+    sup: true
+    p: false
+    h1: false
+    h2: true
+    h3: true
+    pre: false
+    removeFormat: false
+  table: {  }
+  list: {  }
+  link:
+    a: true
+  alignment: {  }
+
+
+
+
 'Sfi.Encult:AbstractPage':
   abstract: true
   ui:
@@ -10,7 +54,6 @@
     icon: icon-file-text
   superTypes:
     - 'Sfi.Encult:AbstractPage'
-
 
 'Sfi.Encult:Worldview':
   superTypes:
@@ -32,6 +75,14 @@
         label: 'Название мировоззрения'
         inspector:
           group: 'general'
+    description:
+      type: string
+      ui:
+        label: 'Описание мировоззрения'
+        inlineEditable: true
+        aloha:
+          <<: *alohaRich
+          placeholder: 'Описание мировоззрения'
 
 'Sfi.Encult:Question':
   superTypes:
@@ -112,15 +163,10 @@
       type: string
       ui:
         label: 'Текст ответа (до голосования)'
-        reloadIfChanged: false
-        inspector:
-          group: 'general'
-          editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
-          editorOptions:
-            rows: 15
-            required: TRUE
-      validation:
-        'TYPO3.Neos/Validation/NotEmptyValidator': []
+        inlineEditable: true
+        aloha:
+          <<: *alohaRich
+          placeholder: 'Текст ответа (до голосования)'
     fullVideo:
       type: string
       ui:
@@ -137,6 +183,73 @@
       type: string
       ui:
         label: 'Расшифровка видео (после голосования)'
+        inlineEditable: true
+        aloha:
+          <<: *alohaRich
+          placeholder: 'Расшифровка видео (после голосования)'
+    fullVideoThumb:
+      type: string
+
+
+'Sfi.Encult:Blog':
+  superTypes:
+    - 'TYPO3.Neos:Document'
+  ui:
+    label: 'Блог'
+    icon: icon-file-text-alt
+    inspector:
+      groups:
+        general:
+          label: 'Блог'
+  constraints:
+    nodeTypes:
+      '*': false
+  childNodes:
+    main:
+      type: 'TYPO3.Neos:ContentCollection'
+  properties:
+    date:
+      type: DateTime
+      defaultValue: 'now'
+      ui:
+        label: 'Дата'
+        reloadIfChanged: true
+        inspector:
+          group: 'general'
+          editorOptions:
+            format: 'd-m-Y H:i'
+      validation:
+        'TYPO3.Neos/Validation/DateTimeValidator': []
+    authorName:
+      type: string
+      ui:
+        label: 'Имя автора'
+        reloadIfChanged: false
+        inspector:
+          group: 'general'
+      validation:
+        'TYPO3.Neos/Validation/NotEmptyValidator': []
+    authorTitle:
+      type: string
+      ui:
+        label: 'Титул автора'
+        reloadIfChanged: false
+        inspector:
+          group: 'general'
+      validation:
+        'TYPO3.Neos/Validation/NotEmptyValidator': []
+    teaser:
+      type: string
+      ui:
+        label: 'Лид к статье'
+        inlineEditable: true
+        aloha:
+          <<: *alohaRich
+          placeholder: 'Лид к статье'
+    bodytext:
+      type: string
+      ui:
+        label: 'Текст статьи'
         reloadIfChanged: false
         inspector:
           group: 'general'
@@ -144,8 +257,6 @@
           editorOptions:
             rows: 15
             required: TRUE
-    fullVideoThumb:
-      type: string
 
 # 'Sfi.Encult:StatsPlugin':
 #   superTypes:

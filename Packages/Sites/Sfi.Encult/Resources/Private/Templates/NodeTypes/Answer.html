@@ -1,0 +1,15 @@
+{namespace neos=TYPO3\Neos\ViewHelpers}
+
+<neos:contentElement.wrap node="{node}">
+	<div class="be-wrap">
+		<div class="be-label">Текст ответа (до голосования):</div>
+		<div class="be-field">
+			{neos:contentElement.editable(property: 'quizText')}
+		</div>
+
+		<div class="be-label">Расшифровка видео (после голосования):</div>
+		<div class="be-field">
+			{neos:contentElement.editable(property: 'fullText')}
+		</div>
+	</div>
+</neos:contentElement.wrap>

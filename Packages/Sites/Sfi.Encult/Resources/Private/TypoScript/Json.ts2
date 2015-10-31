@@ -2,16 +2,28 @@ prototype(Sfi.Encult:Json).@class = 'Sfi\\Encult\\TypoScriptObjects\\JsonImpleme
 
 json = TYPO3.TypoScript:Case {
 	worldviews {
-		condition = ${q(node).property('_name') == 'node-55afb944356ae'}
+		condition = ${q(node).property('uriPathSegment') == 'worldviews'}
 		type = 'Sfi.Encult:WorldviewsJson'
 	}
+	worldview {
+		condition = ${q(node).is('[instanceof Sfi.Encult:Worldview]')}
+		type = 'Sfi.Encult:WorldviewJson'
+	}
 	questions {
-		condition = ${q(node).property('_name') == 'node-55afb779f1131'}
+		condition = ${q(node).property('uriPathSegment') == 'questions'}
 		type = 'Sfi.Encult:QuestionsJson'
 	}
 	answers {
 		condition = ${q(node).is('[instanceof Sfi.Encult:Question]')}
 		type = 'Sfi.Encult:AnswersJson'
+	}
+	blogs {
+		condition = ${q(node).property('uriPathSegment') == 'blogs'}
+		type = 'Sfi.Encult:BlogsJson'
+	}
+	blog {
+		condition = ${q(node).is('[instanceof Sfi.Encult:Blog]')}
+		type = 'Sfi.Encult:BlogJson'
 	}
 }
 
@@ -27,7 +39,7 @@ prototype(Sfi.Encult:JsonPage) < prototype(TYPO3.TypoScript:Http.Message) {
 prototype(Sfi.Encult:WorldviewsJson) < prototype(Sfi.Encult:JsonPage) {
 	content = TYPO3.TypoScript:Collection {
 		collection = ${q(node).children('[instanceof Sfi.Encult:Worldview]').get()}
-		itemRenderer = Sfi.Encult:WorldviewJson
+		itemRenderer = Sfi.Encult:WorldviewSmallJson
 		itemName = 'node'
 		iterationName = 'iterator'
 	}
@@ -40,12 +52,19 @@ prototype(Sfi.Encult:WorldviewsJson) < prototype(Sfi.Encult:JsonPage) {
 	}
 }
 
-prototype(Sfi.Encult:WorldviewJson) < prototype(Sfi.Encult:Json) {
+prototype(Sfi.Encult:WorldviewSmallJson) < prototype(Sfi.Encult:Json) {
 	id = ${q(node).property('uriPathSegment')}
 	title = ${String.stripTags(q(node).property('title'))}
 	voteCount = ${q(site).find('[instanceof Sfi.Encult:Answer]').filterByReference('worldview', node).reduce('previousValue + currentValue.properties.voteCount', 0)}
 	@process.1 = ${'"' + this.id + '": ' + value}
 	@process.2 = ${iterator.isLast ? value : value + ','}
+}
+
+prototype(Sfi.Encult:WorldviewJson) < prototype(Sfi.Encult:Json) {
+	id = ${q(node).property('uriPathSegment')}
+	title = ${String.stripTags(q(node).property('title'))}
+	description = ${q(node).property('description')}
+	voteCount = ${q(site).find('[instanceof Sfi.Encult:Answer]').filterByReference('worldview', node).reduce('previousValue + currentValue.properties.voteCount', 0)}
 }
 
 
@@ -105,11 +124,45 @@ prototype(Sfi.Encult:AnswerJson) < prototype(Sfi.Encult:Json) {
 	id = ${node.identifier}
 	authorName = ${String.stripTags(q(node).property('authorName'))}
 	authorTitle = ${String.stripTags(q(node).property('authorTitle'))}
-	quizText = ${String.stripTags(q(node).property('quizText'))}
+	quizText = ${q(node).property('quizText')}
 	fullVideo = ${q(node).property('fullVideo')}
 	fullVideoThumb = ${q(node).property('fullVideoThumb')}
-	fullText = ${String.stripTags(q(node).property('fullText'))}
+	fullText = ${q(node).property('fullText')}
 	voteCount = ${String.toInteger(q(node).property('voteCount'))}
 	worldviewId = ${q(node).property('worldview').properties.uriPathSegment}
 	@process.1 = ${iterator.isLast ? value : value + ','}
+}
+
+
+
+
+
+# Blogs
+
+prototype(Sfi.Encult:BlogsJson) < prototype(Sfi.Encult:JsonPage) {
+	content = TYPO3.TypoScript:Collection {
+		collection = ${q(node).children('[instanceof Sfi.Encult:Blog]').get()}
+		itemRenderer = Sfi.Encult:BlogSmallJson
+		itemName = 'node'
+		iterationName = 'iterator'
+	}
+	content.@process.1 = ${'{' + value + '}'}
+}
+
+prototype(Sfi.Encult:BlogSmallJson) < prototype(Sfi.Encult:Json) {
+	id = ${q(node).property('uriPathSegment')}
+	title = ${String.stripTags(q(node).property('title'))}
+	date = ${q(node).property('date')}
+	authorName = ${String.stripTags(q(node).property('authorName'))}
+	@process.1 = ${'"' + this.id + '": ' + value}
+	@process.2 = ${iterator.isLast ? value : value + ','}
+}
+
+prototype(Sfi.Encult:BlogJson) < prototype(Sfi.Encult:Json) {
+	id = ${q(node).property('uriPathSegment')}
+	title = ${String.stripTags(q(node).property('title'))}
+	date = ${q(node).property('date')}
+	authorName = ${String.stripTags(q(node).property('authorName'))}
+	authorTitle = ${String.stripTags(q(node).property('authorTitle'))}
+	teaser = ${q(node).property('teaser')}
 }

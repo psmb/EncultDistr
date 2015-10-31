@@ -5,24 +5,34 @@ include: Json.ts2
  */
 page = 'You shouldn't see this'
 
-prototype(Sfi.Encult:Page) >
-prototype(Sfi.Encult:Page) < prototype(TYPO3.Neos:Page) {
+prototype(Sfi.Encult:PageObj) >
+prototype(Sfi.Encult:PageObj) < prototype(TYPO3.Neos:Page) {
 	head {
 		stylesheets.site = TYPO3.TypoScript:Template {
 			templatePath = 'resource://Sfi.Encult/Private/Templates/Page.html'
 			sectionName = 'stylesheets'
 		}
 	}
-	body {
+	body{
 		templatePath = 'resource://Sfi.Encult/Private/Templates/Page.html'
 		sectionName = 'content'
+		content = ContentCase
 	}
+}
+
+prototype(Sfi.Encult:Blog) {
+	main = TYPO3.Neos:ContentCollection{
+		nodePath = 'main'
+	}
+}
+
+prototype(Sfi.Encult:Page) < prototype(TYPO3.TypoScript:Value) {
 }
 
 root.fallbackPage {
 	@position = 'before default'
 	condition = TRUE
-	type = 'Sfi.Encult:Page'
+	type = 'Sfi.Encult:PageObj'
 }
 # Disable stupid layout mechanism
 root.layout>

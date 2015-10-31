@@ -1,0 +1,8 @@
+{namespace neos=TYPO3\Neos\ViewHelpers}
+
+<neos:contentElement.wrap node="{node}">
+	<div class="be-label">Описание мировоззрения:</div>
+	<div class="be-field">
+		{neos:contentElement.editable(property: 'description')}
+	</div>
+</neos:contentElement.wrap>
