@@ -45,7 +45,7 @@ class VoteController extends \TYPO3\Flow\Mvc\Controller\ActionController {
 	 *
 	 * @return void
 	 */
-	public function castVoteAction($answerIdentifier, $language = 'rus') {
+	public function castVoteAction($answerIdentifier, $language = 'ru') {
 		$httpRequest = $this->controllerContext->getRequest()->getHttpRequest();
 		$response = $this->controllerContext->getResponse();
 		$ipAddress = $httpRequest->getClientIpAddress();
