@@ -246,17 +246,6 @@ blah: &alohaRich
         aloha:
           <<: *alohaRich
           placeholder: 'Лид к статье'
-    bodytext:
-      type: string
-      ui:
-        label: 'Текст статьи'
-        reloadIfChanged: false
-        inspector:
-          group: 'general'
-          editor: 'TYPO3.Neos/Inspector/Editors/TextAreaEditor'
-          editorOptions:
-            rows: 15
-            required: TRUE
 
 # 'Sfi.Encult:StatsPlugin':
 #   superTypes:
