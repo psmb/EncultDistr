@@ -27,5 +27,4 @@ class JsonImplementation extends ArrayImplementation {
 
 		return json_encode($output, JSON_UNESCAPED_UNICODE);
 	}
-
 }

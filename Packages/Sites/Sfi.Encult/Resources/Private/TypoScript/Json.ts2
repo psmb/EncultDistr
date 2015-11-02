@@ -165,4 +165,9 @@ prototype(Sfi.Encult:BlogJson) < prototype(Sfi.Encult:Json) {
 	authorName = ${String.stripTags(q(node).property('authorName'))}
 	authorTitle = ${String.stripTags(q(node).property('authorTitle'))}
 	teaser = ${q(node).property('teaser')}
+	bodytext = TYPO3.TypoScript:Collection {
+		collection = ${q(node).children('main').children()}
+		itemRenderer = TYPO3.Neos:ContentCase
+		itemName = 'node'
+	}
 }
