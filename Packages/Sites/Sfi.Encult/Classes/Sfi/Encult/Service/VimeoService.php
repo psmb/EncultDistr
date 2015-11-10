@@ -21,6 +21,9 @@ class VimeoService {
 			$content = file_get_contents($url);
 			$json = json_decode($content, true);
 			$node->setProperty('fullVideoThumb', $json['thumbnail_url']);
+		} else if (!$fullVideo && $fullVideoThumb) {
+			// Clear thumb, if Vimeo video is gone. Useful for reloading thumb.
+			$node->setProperty('fullVideoThumb', '');
 		}
 	}
 }
