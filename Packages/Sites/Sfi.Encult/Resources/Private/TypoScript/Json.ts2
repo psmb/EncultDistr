@@ -1,49 +1,58 @@
-prototype(Sfi.Encult:Json).@class = 'Sfi\\Encult\\TypoScriptObjects\\JsonImplementation'
-
-json = TYPO3.TypoScript:Case {
-	worldviews {
-		condition = ${q(node).property('uriPathSegment') == 'worldviews'}
-		type = 'Sfi.Encult:WorldviewsJson'
-	}
-	worldview {
-		condition = ${q(node).is('[instanceof Sfi.Encult:Worldview]')}
-		type = 'Sfi.Encult:WorldviewJson'
-	}
-	questions {
-		condition = ${q(node).property('uriPathSegment') == 'questions'}
-		type = 'Sfi.Encult:QuestionsJson'
-	}
-	answers {
-		condition = ${q(node).is('[instanceof Sfi.Encult:Question]')}
-		type = 'Sfi.Encult:AnswersJson'
-	}
-	blogs {
-		condition = ${q(node).property('uriPathSegment') == 'blogs'}
-		type = 'Sfi.Encult:BlogsJson'
-	}
-	blog {
-		condition = ${q(node).is('[instanceof Sfi.Encult:Blog]')}
-		type = 'Sfi.Encult:BlogJson'
-	}
+# Json helper objects
+prototype(Sfi.Encult:JsonObject) < prototype(TYPO3.TypoScript:RawArray) {
+    @process.1 = ${Json.stringify(value)}
+}
+prototype(Sfi.Encult:JsonObjectRenderer) < prototype(TYPO3.TypoScript:RawArray) {
+    @process.1 = ${Json.stringify(value)}
+    @process.2 = ${'"' + this.id + '": ' + value}
+    @process.3 = ${iterator.isLast ? value : value + ','}
+}
+prototype(Sfi.Encult:JsonArrayRenderer) < prototype(TYPO3.TypoScript:RawArray) {
+    @process.1 = ${Json.stringify(value)}
+    @process.2 = ${iterator.isLast ? value : value + ','}
 }
 
-prototype(Sfi.Encult:JsonPage) < prototype(TYPO3.TypoScript:Http.Message) {
+# Rendering object for all json endponts
+json = TYPO3.TypoScript:Http.Message {
 	httpResponseHead {
 		headers.Content-Type = 'application/json;charset=utf-8'
 	}
+	content = TYPO3.TypoScript:Case {
+		worldviews {
+			condition = ${q(node).property('uriPathSegment') == 'worldviews'}
+			type = 'Sfi.Encult:WorldviewsJson'
+		}
+		worldview {
+			condition = ${q(node).is('[instanceof Sfi.Encult:Worldview]')}
+			type = 'Sfi.Encult:WorldviewJson'
+		}
+		questions {
+			condition = ${q(node).property('uriPathSegment') == 'questions'}
+			type = 'Sfi.Encult:QuestionsJson'
+		}
+		answers {
+			condition = ${q(node).is('[instanceof Sfi.Encult:Question]')}
+			type = 'Sfi.Encult:AnswersJson'
+		}
+		blogs {
+			condition = ${q(node).property('uriPathSegment') == 'blogs'}
+			type = 'Sfi.Encult:BlogsJson'
+		}
+		blog {
+			condition = ${q(node).is('[instanceof Sfi.Encult:Blog]')}
+			type = 'Sfi.Encult:BlogJson'
+		}
+	}
 }
 
 
+prototype(Sfi.Encult:WorldviewsJson) < prototype(TYPO3.TypoScript:Collection) {
+	collection = ${q(node).children('[instanceof Sfi.Encult:Worldview]').get()}
+	itemRenderer = Sfi.Encult:WorldviewJsonRenderer
+	itemName = 'node'
+	iterationName = 'iterator'
 
-
-prototype(Sfi.Encult:WorldviewsJson) < prototype(Sfi.Encult:JsonPage) {
-	content = TYPO3.TypoScript:Collection {
-		collection = ${q(node).children('[instanceof Sfi.Encult:Worldview]').get()}
-		itemRenderer = Sfi.Encult:WorldviewSmallJson
-		itemName = 'node'
-		iterationName = 'iterator'
-	}
-	content.@process.1 = ${'{' + value + '}'}
+	@process.1 = ${'{' + value + '}'}
 	@cache {
 		mode = 'cached'
 		entryTags {
@@ -52,15 +61,13 @@ prototype(Sfi.Encult:WorldviewsJson) < prototype(Sfi.Encult:JsonPage) {
 	}
 }
 
-prototype(Sfi.Encult:WorldviewSmallJson) < prototype(Sfi.Encult:Json) {
+prototype(Sfi.Encult:WorldviewJsonRenderer) < prototype(Sfi.Encult:JsonObjectRenderer) {
 	id = ${q(node).property('uriPathSegment')}
 	title = ${String.stripTags(q(node).property('title'))}
 	voteCount = ${q(site).find('[instanceof Sfi.Encult:Answer]').filterByReference('worldview', node).reduce('previousValue + currentValue.properties.voteCount', 0)}
-	@process.1 = ${'"' + this.id + '": ' + value}
-	@process.2 = ${iterator.isLast ? value : value + ','}
 }
 
-prototype(Sfi.Encult:WorldviewJson) < prototype(Sfi.Encult:Json) {
+prototype(Sfi.Encult:WorldviewJson) < prototype(Sfi.Encult:JsonObject) {
 	id = ${q(node).property('uriPathSegment')}
 	title = ${String.stripTags(q(node).property('title'))}
 	description = ${q(node).property('description')}
@@ -70,14 +77,12 @@ prototype(Sfi.Encult:WorldviewJson) < prototype(Sfi.Encult:Json) {
 
 
 
-prototype(Sfi.Encult:QuestionsJson) < prototype(Sfi.Encult:JsonPage) {
-	content = TYPO3.TypoScript:Collection {
-		collection = ${q(node).children('[instanceof Sfi.Encult:Question]').get()}
-		itemRenderer = Sfi.Encult:QuestionJson
-		itemName = 'node'
-		iterationName = 'iterator'
-	}
-	content.@process.1 = ${'{' + value + '}'}
+prototype(Sfi.Encult:QuestionsJson) < prototype(TYPO3.TypoScript:Collection) {
+	collection = ${q(node).children('[instanceof Sfi.Encult:Question]').get()}
+	itemRenderer = Sfi.Encult:QuestionJsonRenderer
+	itemName = 'node'
+	iterationName = 'iterator'
+	@process.1 = ${'{' + value + '}'}
 	@cache {
 		mode = 'cached'
 		entryTags {
@@ -86,7 +91,7 @@ prototype(Sfi.Encult:QuestionsJson) < prototype(Sfi.Encult:JsonPage) {
 	}
 }
 
-prototype(Sfi.Encult:QuestionJson) < prototype(Sfi.Encult:Json) {
+prototype(Sfi.Encult:QuestionJsonRenderer) < prototype(Sfi.Encult:JsonObjectRenderer) {
 	id = ${q(node).property('uriPathSegment')}
 	title = ${String.stripTags(q(node).property('title'))}
 	subTitle = ${String.stripTags(q(node).property('subTitle'))}
@@ -94,8 +99,6 @@ prototype(Sfi.Encult:QuestionJson) < prototype(Sfi.Encult:Json) {
 	answerWithMaxVotesIndex = ${q(node).children('[instanceof Sfi.Encult:Answer]').reduce('array[previousValue].properties.voteCount < array[index].properties.voteCount ? index : previousValue', 0)}
 	answerWithMaxVotesCount = ${q(node).children('[instanceof Sfi.Encult:Answer]').get(this.answerWithMaxVotesIndex).properties.voteCount}
 	worldviewWithMaxVotes = ${q(node).children('[instanceof Sfi.Encult:Answer]').get(this.answerWithMaxVotesIndex).properties.worldview.properties.title}
-	@process.1 = ${'"' + this.id + '": ' + value}
-	@process.2 = ${iterator.isLast ? value : value + ','}
 }
 
 
@@ -104,14 +107,12 @@ prototype(Sfi.Encult:QuestionJson) < prototype(Sfi.Encult:Json) {
 
 
 
-prototype(Sfi.Encult:AnswersJson) < prototype(Sfi.Encult:JsonPage) {
-	content = TYPO3.TypoScript:Collection {
-		collection = ${q(node).children('[instanceof Sfi.Encult:Answer]').get()}
-		itemRenderer = Sfi.Encult:AnswerJson
-		itemName = 'node'
-		iterationName = 'iterator'
-	}
-	content.@process.1 = ${'[' + value + ']'}
+prototype(Sfi.Encult:AnswersJson) < prototype(TYPO3.TypoScript:Collection) {
+	collection = ${q(node).children('[instanceof Sfi.Encult:Answer]').get()}
+	itemRenderer = Sfi.Encult:AnswerJsonRenderer
+	itemName = 'node'
+	iterationName = 'iterator'
+	@process.1 = ${'[' + value + ']'}
 	@cache {
 		mode = 'cached'
 		entryTags {
@@ -120,7 +121,7 @@ prototype(Sfi.Encult:AnswersJson) < prototype(Sfi.Encult:JsonPage) {
 	}
 }
 
-prototype(Sfi.Encult:AnswerJson) < prototype(Sfi.Encult:Json) {
+prototype(Sfi.Encult:AnswerJsonRenderer) < prototype(Sfi.Encult:JsonArrayRenderer) {
 	id = ${node.identifier}
 	authorName = ${String.stripTags(q(node).property('authorName'))}
 	authorTitle = ${String.stripTags(q(node).property('authorTitle'))}
@@ -130,7 +131,6 @@ prototype(Sfi.Encult:AnswerJson) < prototype(Sfi.Encult:Json) {
 	fullText = ${q(node).property('fullText')}
 	voteCount = ${String.toInteger(q(node).property('voteCount'))}
 	worldviewId = ${q(node).property('worldview').properties.uriPathSegment}
-	@process.1 = ${iterator.isLast ? value : value + ','}
 }
 
 
@@ -139,26 +139,22 @@ prototype(Sfi.Encult:AnswerJson) < prototype(Sfi.Encult:Json) {
 
 # Blogs
 
-prototype(Sfi.Encult:BlogsJson) < prototype(Sfi.Encult:JsonPage) {
-	content = TYPO3.TypoScript:Collection {
-		collection = ${q(node).children('[instanceof Sfi.Encult:Blog]').get()}
-		itemRenderer = Sfi.Encult:BlogSmallJson
-		itemName = 'node'
-		iterationName = 'iterator'
-	}
-	content.@process.1 = ${'{' + value + '}'}
+prototype(Sfi.Encult:BlogsJson) < prototype(TYPO3.TypoScript:Collection) {
+	collection = ${q(node).children('[instanceof Sfi.Encult:Blog]').get()}
+	itemRenderer = Sfi.Encult:BlogJsonRenderer
+	itemName = 'node'
+	iterationName = 'iterator'
+	@process.1 = ${'{' + value + '}'}
 }
 
-prototype(Sfi.Encult:BlogSmallJson) < prototype(Sfi.Encult:Json) {
+prototype(Sfi.Encult:BlogJsonRenderer) < prototype(Sfi.Encult:JsonObjectRenderer) {
 	id = ${q(node).property('uriPathSegment')}
 	title = ${String.stripTags(q(node).property('title'))}
 	date = ${q(node).property('date')}
 	authorName = ${String.stripTags(q(node).property('authorName'))}
-	@process.1 = ${'"' + this.id + '": ' + value}
-	@process.2 = ${iterator.isLast ? value : value + ','}
 }
 
-prototype(Sfi.Encult:BlogJson) < prototype(Sfi.Encult:Json) {
+prototype(Sfi.Encult:BlogJson) < prototype(Sfi.Encult:JsonObject) {
 	id = ${q(node).property('uriPathSegment')}
 	title = ${String.stripTags(q(node).property('title'))}
 	date = ${q(node).property('date')}
