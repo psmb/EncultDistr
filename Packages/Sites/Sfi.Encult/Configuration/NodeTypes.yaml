@@ -190,7 +190,7 @@ blah: &alohaRich
     fullVideoThumb:
       type: string
     voteCount:
-      type: string
+      type: integer
 
 
 'Sfi.Encult:Blog':
