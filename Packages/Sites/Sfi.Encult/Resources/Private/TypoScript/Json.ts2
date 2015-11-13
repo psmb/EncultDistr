@@ -42,6 +42,10 @@ json = TYPO3.TypoScript:Http.Message {
 			condition = ${q(node).is('[instanceof Sfi.Encult:Blog]')}
 			type = 'Sfi.Encult:BlogJson'
 		}
+		about {
+			condition = ${q(node).property('uriPathSegment') == 'about'}
+			type = 'Sfi.Encult:PageJson'
+		}
 	}
 }
 
@@ -163,6 +167,17 @@ prototype(Sfi.Encult:BlogJson) < prototype(Sfi.Encult:JsonObject) {
 	date = ${q(node).property('date')}
 	authorName = ${String.stripTags(q(node).property('authorName'))}
 	authorTitle = ${String.stripTags(q(node).property('authorTitle'))}
+	teaser = ${q(node).property('teaser')}
+	bodytext = TYPO3.TypoScript:Collection {
+		collection = ${q(node).children('main').children()}
+		itemRenderer = TYPO3.Neos:ContentCase
+		itemName = 'node'
+	}
+}
+
+prototype(Sfi.Encult:PageJson) < prototype(Sfi.Encult:JsonObject) {
+	id = ${q(node).property('uriPathSegment')}
+	title = ${String.stripTags(q(node).property('title'))}
 	teaser = ${q(node).property('teaser')}
 	bodytext = TYPO3.TypoScript:Collection {
 		collection = ${q(node).children('main').children()}

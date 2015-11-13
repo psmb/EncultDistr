@@ -2,12 +2,12 @@
 
 <neos:contentElement.wrap node="{node}">
 	<div class="be-wrap">
-		<div class="be-label">Тизер к статье:</div>
+		<div class="be-label">Тизер страницы:</div>
 		<div class="be-field">
 			{neos:contentElement.editable(property: 'teaser')}
 		</div>
 
-		<div class="be-label">Полный текст статьи:</div>
+		<div class="be-label">Полный текст страницы:</div>
 		<div class="be-field">
 			{main -> f:format.raw()}
 		</div>

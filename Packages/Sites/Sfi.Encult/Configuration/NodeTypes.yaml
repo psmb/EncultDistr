@@ -57,12 +57,33 @@ blah: &alohaRich
     label: 'Abstract Page'
   superTypes:
     - 'TYPO3.Neos:Document'
+
 'Sfi.Encult:Page':
+  superTypes:
+    - 'Sfi.Encult:AbstractPage'
   ui:
     label: 'Страница'
     icon: icon-file-text
-  superTypes:
-    - 'Sfi.Encult:AbstractPage'
+    inspector:
+      groups:
+        general:
+          label: 'Страница'
+  constraints:
+    nodeTypes:
+      '*': false
+  childNodes:
+    main:
+      type: 'TYPO3.Neos:ContentCollection'
+  properties:
+    teaser:
+      type: string
+      ui:
+        label: 'Тизер'
+        inlineEditable: true
+        aloha:
+          <<: *alohaRich
+          placeholder: 'Тизер'
+
 
 'Sfi.Encult:Worldview':
   superTypes:

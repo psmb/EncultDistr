@@ -26,7 +26,10 @@ prototype(Sfi.Encult:Blog) {
 	}
 }
 
-prototype(Sfi.Encult:Page) < prototype(TYPO3.TypoScript:Value) {
+prototype(Sfi.Encult:Page) {
+	main = TYPO3.Neos:ContentCollection{
+		nodePath = 'main'
+	}
 }
 
 root.fallbackPage {
@@ -36,3 +39,8 @@ root.fallbackPage {
 }
 # Disable stupid layout mechanism
 root.layout>
+
+
+prototype(TYPO3.Neos.NodeTypes:Image) {
+	templatePath = 'resource://Sfi.Encult/Private/Templates/NodeTypes/Image.html'
+}
