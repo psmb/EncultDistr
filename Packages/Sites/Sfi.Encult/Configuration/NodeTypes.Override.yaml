@@ -1,28 +1,11 @@
 'TYPO3.Neos.NodeTypes:TextWithImage':
   abstract: true
 
-'TYPO3.Neos.NodeTypes:Html':
-  abstract: true
 
 'TYPO3.Neos.NodeTypes:Menu':
   abstract: true
 
-'TYPO3.Neos.NodeTypes:Column':
-  abstract: true
-
-'TYPO3.Neos.NodeTypes:TwoColumn':
-  abstract: true
-
-'TYPO3.Neos.NodeTypes:ThreeColumn':
-  abstract: true
-
-'TYPO3.Neos.NodeTypes:FourColumn':
-  abstract: true
-
 'TYPO3.Neos.NodeTypes:Form':
-  abstract: true
-
-'TYPO3.Neos.NodeTypes:AssetList':
   abstract: true
 
 'TYPO3.Neos.NodeTypes:ContentReferences':
