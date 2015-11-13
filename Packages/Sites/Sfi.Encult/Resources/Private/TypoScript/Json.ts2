@@ -150,6 +150,13 @@ prototype(Sfi.Encult:BlogsJson) < prototype(TYPO3.TypoScript:Collection) {
 	itemName = 'node'
 	iterationName = 'iterator'
 	@process.1 = ${'{' + value + '}'}
+	@cache {
+		mode = 'cached'
+		entryTags {
+			1 = ${'Node_' + node.identifier}
+			2 = ${'DescendantOf_' + node.identifier}
+		}
+	}
 }
 
 prototype(Sfi.Encult:BlogJsonRenderer) < prototype(Sfi.Encult:JsonObjectRenderer) {
@@ -172,6 +179,13 @@ prototype(Sfi.Encult:BlogJson) < prototype(Sfi.Encult:JsonObject) {
 		collection = ${q(node).children('main').children()}
 		itemRenderer = TYPO3.Neos:ContentCase
 		itemName = 'node'
+	}
+	@cache {
+		mode = 'cached'
+		entryTags {
+			1 = ${'Node_' + node.identifier}
+			2 = ${'DescendantOf_' + node.identifier}
+		}
 	}
 }
 
