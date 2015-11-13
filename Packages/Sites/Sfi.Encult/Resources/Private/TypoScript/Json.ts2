@@ -152,6 +152,8 @@ prototype(Sfi.Encult:BlogJsonRenderer) < prototype(Sfi.Encult:JsonObjectRenderer
 	title = ${String.stripTags(q(node).property('title'))}
 	date = ${q(node).property('date')}
 	authorName = ${String.stripTags(q(node).property('authorName'))}
+	authorTitle = ${String.stripTags(q(node).property('authorTitle'))}
+	teaser = ${q(node).property('teaser')}
 }
 
 prototype(Sfi.Encult:BlogJson) < prototype(Sfi.Encult:JsonObject) {
