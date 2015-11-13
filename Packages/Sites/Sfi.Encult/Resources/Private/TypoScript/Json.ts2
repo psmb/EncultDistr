@@ -68,7 +68,7 @@ prototype(Sfi.Encult:WorldviewsJson) < prototype(TYPO3.TypoScript:Collection) {
 prototype(Sfi.Encult:WorldviewJsonRenderer) < prototype(Sfi.Encult:JsonObjectRenderer) {
 	id = ${q(node).property('uriPathSegment')}
 	title = ${String.stripTags(q(node).property('title'))}
-	voteCount = ${q(site).find('[instanceof Sfi.Encult:Answer]').filterByReference('worldview', node).reduce('previousValue + currentValue.properties.voteCount', 0)}
+	voteCount = ${q(site).find('[instanceof Sfi.Encult:Answer]').filterByReference('worldview', node).context({'dimensions': {language: {ru: 'ru', en: 'en'}}}).reduce('previousValue + currentValue.properties.voteCount', 0)}
 }
 
 prototype(Sfi.Encult:WorldviewJson) < prototype(Sfi.Encult:JsonObject) {
@@ -76,7 +76,7 @@ prototype(Sfi.Encult:WorldviewJson) < prototype(Sfi.Encult:JsonObject) {
 	title = ${String.stripTags(q(node).property('title'))}
 	teaser = ${String.stripTags(q(node).property('teaser'))}
 	description = ${q(node).property('description')}
-	voteCount = ${q(site).find('[instanceof Sfi.Encult:Answer]').filterByReference('worldview', node).reduce('previousValue + currentValue.properties.voteCount', 0)}
+	voteCount = ${q(site).find('[instanceof Sfi.Encult:Answer]').filterByReference('worldview', node).context({'dimensions': {language: {ru: 'ru', en: 'en'}}}).reduce('previousValue + currentValue.properties.voteCount', 0)}
 }
 
 
@@ -100,9 +100,9 @@ prototype(Sfi.Encult:QuestionJsonRenderer) < prototype(Sfi.Encult:JsonObjectRend
 	id = ${q(node).property('uriPathSegment')}
 	title = ${String.stripTags(q(node).property('title'))}
 	subTitle = ${String.stripTags(q(node).property('subTitle'))}
-	voteCount = ${String.toInteger(q(node).children('[instanceof Sfi.Encult:Answer]').reduce('previousValue + currentValue.properties.voteCount', 0))}
-	answerWithMaxVotesIndex = ${q(node).children('[instanceof Sfi.Encult:Answer]').reduce('array[previousValue].properties.voteCount < array[index].properties.voteCount ? index : previousValue', 0)}
-	answerWithMaxVotesCount = ${q(node).children('[instanceof Sfi.Encult:Answer]').get(this.answerWithMaxVotesIndex).properties.voteCount}
+	voteCount = ${String.toInteger(q(node).children('[instanceof Sfi.Encult:Answer]').context({'dimensions': {language: {ru: 'ru', en: 'en'}}}).reduce('previousValue + currentValue.properties.voteCount', 0))}
+	answerWithMaxVotesIndex = ${q(node).children('[instanceof Sfi.Encult:Answer]').context({'dimensions': {language: {ru: 'ru', en: 'en'}}}).reduce('array[previousValue].properties.voteCount < array[index].properties.voteCount ? index : previousValue', 0)}
+	answerWithMaxVotesCount = ${q(node).children('[instanceof Sfi.Encult:Answer]').context({'dimensions': {language: {ru: 'ru', en: 'en'}}}).get(this.answerWithMaxVotesIndex).properties.voteCount}
 	worldviewWithMaxVotes = ${q(node).children('[instanceof Sfi.Encult:Answer]').get(this.answerWithMaxVotesIndex).properties.worldview.properties.title}
 }
 
@@ -134,7 +134,7 @@ prototype(Sfi.Encult:AnswerJsonRenderer) < prototype(Sfi.Encult:JsonArrayRendere
 	fullVideo = ${q(node).property('fullVideo')}
 	fullVideoThumb = ${q(node).property('fullVideoThumb')}
 	fullText = ${q(node).property('fullText')}
-	voteCount = ${String.toInteger(q(node).property('voteCount'))}
+	voteCount = ${String.toInteger(q(node).context({'dimensions': {language: {ru: 'ru', en: 'en'}}}).property('voteCount'))}
 	worldviewId = ${q(node).property('worldview').properties.uriPathSegment}
 }
 
@@ -183,5 +183,12 @@ prototype(Sfi.Encult:PageJson) < prototype(Sfi.Encult:JsonObject) {
 		collection = ${q(node).children('main').children()}
 		itemRenderer = TYPO3.Neos:ContentCase
 		itemName = 'node'
+	}
+	@cache {
+		mode = 'cached'
+		entryTags {
+			1 = ${'Node_' + node.identifier}
+			2 = ${'DescendantOf_' + node.identifier}
+		}
 	}
 }
