@@ -189,6 +189,8 @@ blah: &alohaRich
           placeholder: 'Расшифровка видео (после голосования)'
     fullVideoThumb:
       type: string
+    voteCount:
+      type: string
 
 
 'Sfi.Encult:Blog':
