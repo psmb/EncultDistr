@@ -70,6 +70,7 @@ prototype(Sfi.Encult:WorldviewJsonRenderer) < prototype(Sfi.Encult:JsonObjectRen
 prototype(Sfi.Encult:WorldviewJson) < prototype(Sfi.Encult:JsonObject) {
 	id = ${q(node).property('uriPathSegment')}
 	title = ${String.stripTags(q(node).property('title'))}
+	teaser = ${String.stripTags(q(node).property('teaser'))}
 	description = ${q(node).property('description')}
 	voteCount = ${q(site).find('[instanceof Sfi.Encult:Answer]').filterByReference('worldview', node).reduce('previousValue + currentValue.properties.voteCount', 0)}
 }

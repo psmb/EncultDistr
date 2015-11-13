@@ -18,6 +18,10 @@ blah: &alohaPlain
   link:
     a: false
   alignment: {  }
+  formatlesspaste:
+    'button': FALSE
+    'formatlessPasteOption': TRUE
+    'autoparagraph': TRUE
 
 blah: &alohaRich
   placeholder: 'Enter title here'
@@ -27,18 +31,23 @@ blah: &alohaRich
     u: false
     sub: true
     sup: true
-    p: false
+    p: true
     h1: false
     h2: true
     h3: true
     pre: false
     removeFormat: false
   table: {  }
-  list: {  }
+  list:
+    'ul': TRUE
+    'ol': TRUE
   link:
     a: true
   alignment: {  }
-
+  formatlesspaste:
+    'button': TRUE
+    'formatlessPasteOption': TRUE
+    'autoparagraph': TRUE
 
 
 
@@ -75,6 +84,14 @@ blah: &alohaRich
         label: 'Название мировоззрения'
         inspector:
           group: 'general'
+    teaser:
+      type: string
+      ui:
+        label: 'Тизер'
+        inlineEditable: true
+        aloha:
+          <<: *alohaPlain
+          placeholder: 'Тизер'
     description:
       type: string
       ui:
@@ -243,11 +260,11 @@ blah: &alohaRich
     teaser:
       type: string
       ui:
-        label: 'Лид к статье'
+        label: 'Тизер'
         inlineEditable: true
         aloha:
           <<: *alohaRich
-          placeholder: 'Лид к статье'
+          placeholder: 'Тизер'
 
 # 'Sfi.Encult:StatsPlugin':
 #   superTypes:
