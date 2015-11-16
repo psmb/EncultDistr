@@ -50,6 +50,17 @@ blah: &alohaRich
     'autoparagraph': TRUE
 
 
+'TYPO3.Neos.NodeTypes:TextMixin':
+  abstract: TRUE
+  properties:
+    text:
+      type: string
+      defaultValue: ''
+      ui:
+        inlineEditable: TRUE
+        aloha:
+          <<: *alohaRich
+
 
 'Sfi.Encult:AbstractPage':
   abstract: true
