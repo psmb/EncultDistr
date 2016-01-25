@@ -77,6 +77,12 @@ prototype(Sfi.Encult:WorldviewJson) < prototype(Sfi.Encult:JsonObject) {
 	teaser = ${String.stripTags(q(node).property('teaser'))}
 	description = ${q(node).property('description')}
 	voteCount = ${q(site).find('[instanceof Sfi.Encult:Answer]').filterByReference('worldview', node).context({'dimensions': {language: {ru: 'ru', en: 'en'}}}).reduce('previousValue + currentValue.properties.voteCount', 0)}
+	@cache {
+		mode = 'cached'
+		entryTags {
+			1 = ${'NodeType_Sfi.Encult:Answer'}
+		}
+	}
 }
 
 
